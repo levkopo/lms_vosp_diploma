@@ -1,0 +1,1763 @@
+[
+  {
+    "id": "lesson3_slide_1",
+    "elements": [
+      {
+        "type": "text",
+        "id": "lesson3_slide1_element1",
+        "content": "Активные компоненты ВОСП: Оптические излучатели",
+        "positioning": {
+          "top": "5%",
+          "left": "5%",
+          "width": "90%",
+          "height": "auto"
+        },
+        "fontSize": "48px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide1_element2",
+        "content": "Что такое оптические излучатели?",
+        "positioning": {
+          "top": "18%",
+          "left": "7%",
+          "width": "86%",
+          "height": "auto"
+        },
+        "fontSize": "36px"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide1_element3",
+        "content": "Оптические излучатели – это полупроводниковые устройства, преобразующие электрический сигнал в оптический (световой) сигнал. Этот световой сигнал затем передается по волоконно-оптическим линиям связи (ВОЛС).",
+        "positioning": {
+          "top": "28%",
+          "left": "7%",
+          "width": "86%",
+          "height": "auto"
+        },
+        "fontSize": "26px"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide1_element4",
+        "content": "Роль оптических излучателей в ВОСП:",
+        "positioning": {
+          "top": "45%",
+          "left": "7%",
+          "width": "86%",
+          "height": "auto"
+        },
+        "fontSize": "36px"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide1_element5",
+        "content": "Являются ключевым активным компонентом на передающей стороне волоконно-оптической системы передачи (ВОСП). Они генерируют световые импульсы, которые несут информацию. От характеристик излучателя во многом зависят дальность передачи, пропускная способность и надежность всей системы.",
+        "positioning": {
+          "top": "55%",
+          "left": "7%",
+          "width": "86%",
+          "height": "auto"
+        },
+        "fontSize": "26px"
+      }
+    ]
+  },
+  {
+    "id": "lesson3_slide_2",
+    "elements": [
+      {
+        "type": "text",
+        "id": "lesson3_slide2_element1",
+        "content": "Типы оптических излучателей",
+        "positioning": {
+          "top": "5%",
+          "left": "5%",
+          "width": "90%",
+          "height": "auto"
+        },
+        "fontSize": "48px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide2_element2",
+        "content": "В волоконно-оптических системах передачи (ВОСП) используются два основных типа полупроводниковых оптических излучателей:",
+        "positioning": {
+          "top": "18%",
+          "left": "7%",
+          "width": "86%",
+          "height": "auto"
+        },
+        "fontSize": "28px"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide2_element3",
+        "content": "1. Светоизлучающие диоды (СИД) или светодиоды (LED - Light Emitting Diode)",
+        "positioning": {
+          "top": "30%",
+          "left": "10%",
+          "width": "80%",
+          "height": "auto"
+        },
+        "fontSize": "30px",
+        "fontWidth": "600"
+      },
+      {
+        "type": "image",
+        "id": "lesson3_slide2_element4",
+        "url": "https://dummyimage.com/200x150/ddd/000.png&text=LED+Symbol",
+        "altText": "Символ светодиода",
+        "positioning": {
+          "top": "38%",
+          "left": "15%",
+          "width": "200px",
+          "height": "150px"
+        }
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide2_element5",
+        "content": "2. Лазерные диоды (ЛД) или полупроводниковые лазеры (LD - Laser Diode)",
+        "positioning": {
+          "top": "30%",
+          "left": "55%",
+          "width": "80%",
+          "height": "auto"
+        },
+        "fontSize": "30px",
+        "fontWidth": "600"
+      },
+      {
+        "type": "image",
+        "id": "lesson3_slide2_element6",
+        "url": "https://dummyimage.com/200x150/ddd/000.png&text=Laser+Diode+Symbol",
+        "altText": "Символ лазерного диода",
+        "positioning": {
+          "top": "38%",
+          "left": "60%",
+          "width": "200px",
+          "height": "150px"
+        }
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide2_element7",
+        "content": "Выбор типа излучателя зависит от конкретных требований к системе связи, таких как дальность передачи, скорость передачи данных, тип используемого оптического волокна и общая стоимость системы.",
+        "positioning": {
+          "top": "65%",
+          "left": "7%",
+          "width": "86%",
+          "height": "auto"
+        },
+        "fontSize": "26px"
+      }
+    ]
+  },
+  {
+    "id": "lesson3_slide_3",
+    "elements": [
+      {
+        "type": "text",
+        "id": "lesson3_slide3_element1",
+        "content": "Светодиоды (LED): Принцип работы",
+        "positioning": {
+          "top": "5%",
+          "left": "5%",
+          "width": "90%",
+          "height": "auto"
+        },
+        "fontSize": "48px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide3_element2",
+        "content": "Принцип работы светодиода основан на явлении **инжекционной электролюминесценции** – излучении света полупроводниковым p-n переходом при прохождении через него прямого электрического тока.",
+        "positioning": {
+          "top": "18%",
+          "left": "7%",
+          "width": "86%",
+          "height": "auto"
+        },
+        "fontSize": "28px"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide3_element3",
+        "content": "Структура и механизм излучения:",
+        "positioning": {
+          "top": "30%",
+          "left": "7%",
+          "width": "40%",
+          "height": "auto"
+        },
+        "fontSize": "26px"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide3_element4",
+        "content": "1. Светодиод состоит из полупроводникового кристалла с p-n переходом.\n2. При подаче прямого напряжения (плюс к p-области, минус к n-области), электроны из n-области инжектируются в p-область, а дырки из p-области – в n-область.\n3. Вблизи p-n перехода (в активной области) происходит рекомбинация инжектированных носителей заряда (электронов и дырок).\n4. Энергия, выделяющаяся при рекомбинации, излучается в виде фотонов (квантов света). Длина волны (цвет) излучаемого света зависит от ширины запрещенной зоны материала полупроводника.",
+        "positioning": {
+          "top": "38%",
+          "left": "7%",
+          "width": "45%",
+          "height": "auto"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "image",
+        "id": "lesson3_slide3_element5",
+        "url": "https://dummyimage.com/500x350/eee/000.png&text=P-N+переход+светодиода+(схема)",
+        "altText": "Схема p-n перехода светодиода в режиме прямого смещения и излучения света",
+        "caption": "Рис. 1. Упрощенная схема p-n перехода светодиода: инжекция носителей и излучательная рекомбинация.",
+        "positioning": {
+          "top": "35%",
+          "left": "55%",
+          "width": "500px",
+          "height": "350px"
+        }
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide3_element6",
+        "content": "Для ВОСП используются светодиоды, излучающие в инфракрасном диапазоне (обычно 0.85 мкм, 1.3 мкм), где оптические волокна имеют минимальные потери и/или дисперсию.",
+        "positioning": {
+          "top": "75%",
+          "left": "7%",
+          "width": "86%",
+          "height": "auto"
+        },
+        "fontSize": "24px"
+      }
+    ]
+  },
+  {
+    "id": "lesson3_slide_4",
+    "elements": [
+      {
+        "type": "text",
+        "id": "lesson3_slide4_element1",
+        "content": "Характеристики светодиодов (LED)",
+        "positioning": {
+          "top": "3%",
+          "left": "5%",
+          "width": "90%",
+          "height": "auto"
+        },
+        "fontSize": "48px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide4_element2",
+        "content": "Основные параметры светодиодов, определяющие их применение в ВОСП:",
+        "positioning": {
+          "top": "12%",
+          "left": "7%",
+          "width": "86%",
+          "height": "auto"
+        },
+        "fontSize": "28px"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide4_element3",
+        "content": "1. Спектр излучения:",
+        "positioning": {
+          "top": "20%",
+          "left": "7%",
+          "width": "86%",
+          "height": "auto"
+        },
+        "fontSize": "24px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide4_element4",
+        "content": "Светодиоды имеют относительно широкий спектр излучения (ширина спектральной линии Δλ составляет 30-150 нм). Это приводит к значительной хроматической дисперсии в волокне, ограничивая дальность и скорость передачи.",
+        "positioning": {
+          "top": "25%",
+          "left": "9%",
+          "width": "82%",
+          "height": "auto"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide4_element5",
+        "content": "2. Оптическая мощность:",
+        "positioning": {
+          "top": "35%",
+          "left": "7%",
+          "width": "86%",
+          "height": "auto"
+        },
+        "fontSize": "24px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide4_element6",
+        "content": "Мощность излучения, вводимая в стандартное многомодовое волокно, составляет от десятков до сотен микроватт. В одномодовое волокно вводится значительно меньшая мощность из-за широкой диаграммы направленности.",
+        "positioning": {
+          "top": "40%",
+          "left": "9%",
+          "width": "82%",
+          "height": "auto"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide4_element7",
+        "content": "3. Время отклика (быстродействие):",
+        "positioning": {
+          "top": "50%",
+          "left": "7%",
+          "width": "86%",
+          "height": "auto"
+        },
+        "fontSize": "24px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide4_element8",
+        "content": "Определяется временем жизни инжектированных неосновных носителей заряда и составляет от нескольких наносекунд до десятков наносекунд. Это ограничивает максимальную скорость модуляции сигнала (обычно до нескольких сотен Мбит/с).",
+        "positioning": {
+          "top": "55%",
+          "left": "9%",
+          "width": "82%",
+          "height": "auto"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide4_element9",
+        "content": "4. Эффективность (КПД):",
+        "positioning": {
+          "top": "65%",
+          "left": "7%",
+          "width": "86%",
+          "height": "auto"
+        },
+        "fontSize": "24px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide4_element10",
+        "content": "Внешний квантовый выход (отношение числа излученных фотонов к числу инжектированных электронов) и эффективность ввода излучения в волокно. Общий КПД обычно невысок.",
+        "positioning": {
+          "top": "70%",
+          "left": "9%",
+          "width": "82%",
+          "height": "auto"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide4_element11",
+        "content": "5. Диаграмма направленности:",
+        "positioning": {
+          "top": "80%",
+          "left": "7%",
+          "width": "86%",
+          "height": "auto"
+        },
+        "fontSize": "24px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide4_element12",
+        "content": "Светодиоды имеют широкую, близкую к ламбертовской, диаграмму направленности. Это затрудняет эффективный ввод излучения в волокна с малой апертурой (особенно в одномодовые).",
+        "positioning": {
+          "top": "85%",
+          "left": "9%",
+          "width": "82%",
+          "height": "auto"
+        },
+        "fontSize": "22px"
+      }
+    ]
+  },
+  {
+    "id": "lesson3_slide_5",
+    "elements": [
+      {
+        "type": "text",
+        "id": "lesson3_slide5_element1",
+        "content": "Типы светодиодов (LED) для ВОСП",
+        "positioning": {
+          "top": "5%",
+          "left": "5%",
+          "width": "90%",
+          "height": "auto"
+        },
+        "fontSize": "48px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide5_element2",
+        "content": "В зависимости от конструкции и направления вывода излучения, различают два основных типа светодиодов, используемых в ВОСП:",
+        "positioning": {
+          "top": "18%",
+          "left": "7%",
+          "width": "86%",
+          "height": "auto"
+        },
+        "fontSize": "28px"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide5_element3",
+        "content": "1. Поверхностно-излучающие светодиоды (SLED - Surface-emitting LED)",
+        "positioning": {
+          "top": "30%",
+          "left": "7%",
+          "width": "43%",
+          "height": "auto"
+        },
+        "fontSize": "26px",
+        "fontWidth": "600"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide5_element4",
+        "content": "Излучение выводится перпендикулярно плоскости p-n перехода. Активная область формируется вблизи поверхности кристалла. Для улучшения вывода света и согласования с волокном часто используется микролинза. Просты в изготовлении, имеют низкую стоимость, но более широкую диаграмму направленности и меньшую эффективность ввода в волокно.",
+        "positioning": {
+          "top": "38%",
+          "left": "7%",
+          "width": "43%",
+          "height": "auto"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "image",
+        "id": "lesson3_slide5_element5",
+        "url": "https://dummyimage.com/400x300/eee/000.png&text=SLED+структура",
+        "altText": "Структура поверхностно-излучающего светодиода",
+        "caption": "Рис. 2. Схема SLED",
+        "positioning": {
+          "top": "58%",
+          "left": "10%",
+          "width": "400px",
+          "height": "300px"
+        }
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide5_element6",
+        "content": "2. Торцевые (или краевые) светодиоды (ELED - Edge-emitting LED)",
+        "positioning": {
+          "top": "30%",
+          "left": "53%",
+          "width": "43%",
+          "height": "auto"
+        },
+        "fontSize": "26px",
+        "fontWidth": "600"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide5_element7",
+        "content": "Излучение выводится в направлении, параллельном плоскости p-n перехода, через торец кристалла. Активная область имеет форму узкой полоски (световодная структура), что обеспечивает более направленное излучение и лучшую эффективность ввода в оптическое волокно по сравнению с SLED. Более сложны в изготовлении и дороже, но обеспечивают более высокую мощность и лучшее согласование с волокном.",
+        "positioning": {
+          "top": "38%",
+          "left": "53%",
+          "width": "43%",
+          "height": "auto"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "image",
+        "id": "lesson3_slide5_element8",
+        "url": "https://dummyimage.com/400x300/eee/000.png&text=ELED+структура",
+        "altText": "Структура торцевого светодиода",
+        "caption": "Рис. 3. Схема ELED",
+        "positioning": {
+          "top": "58%",
+          "left": "55%",
+          "width": "400px",
+          "height": "300px"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lesson3_slide_6",
+    "elements": [
+      {
+        "type": "text",
+        "id": "lesson3_slide6_element1",
+        "content": "Применение светодиодов (LED) в ВОСП",
+        "positioning": {
+          "top": "5%",
+          "left": "5%",
+          "width": "90%",
+          "height": "auto"
+        },
+        "fontSize": "48px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide6_element2",
+        "content": "Несмотря на появление более совершенных лазерных диодов, светодиоды по-прежнему находят применение в определённых нишах ВОСП благодаря своим преимуществам:",
+        "positioning": {
+          "top": "18%",
+          "left": "7%",
+          "width": "86%",
+          "height": "auto"
+        },
+        "fontSize": "28px"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide6_element3",
+        "content": "Преимущества LED:",
+        "positioning": {
+          "top": "28%",
+          "left": "7%",
+          "width": "86%",
+          "height": "auto"
+        },
+        "fontSize": "26px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide6_element4",
+        "content": "•  Низкая стоимость\n•  Простота конструкции и схемы управления\n•  Высокая надежность и длительный срок службы\n•  Меньшая чувствительность к изменениям температуры\n•  Линейная ватт-амперная характеристика",
+        "positioning": {
+          "top": "35%",
+          "left": "10%",
+          "width": "80%",
+          "height": "auto"
+        },
+        "fontSize": "24px"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide6_element5",
+        "content": "Области применения LED:",
+        "positioning": {
+          "top": "55%",
+          "left": "7%",
+          "width": "86%",
+          "height": "auto"
+        },
+        "fontSize": "26px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide6_element6",
+        "content": "•  **ВОСП малой и средней дальности:** Обычно до нескольких километров (редко до 10-15 км) при использовании многомодовых волокон.\n•  **Локальные вычислительные сети (LAN):** Особенно стандарты Ethernet (например, 100BASE-FX, 1000BASE-SX на длине волны 0.85 мкм).\n•  **Системы передачи данных внутри объектов:** Например, в бортовых системах, промышленной автоматизации.\n•  **Короткие линии связи:** Где не требуются высокие скорости передачи данных (обычно до 100-622 Мбит/с).\n•  **Оптические датчики и измерительные системы.**",
+        "positioning": {
+          "top": "62%",
+          "left": "10%",
+          "width": "80%",
+          "height": "auto"
+        },
+        "fontSize": "24px"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide6_element7",
+        "content": "Чаще всего светодиоды используются в паре с многомодовыми оптическими волокнами.",
+        "positioning": {
+          "top": "88%",
+          "left": "7%",
+          "width": "86%",
+          "height": "auto"
+        },
+        "fontSize": "22px",
+        "fontWidth": "italic"
+      }
+    ]
+  },
+  {
+    "id": "lesson3_slide_7",
+    "elements": [
+      {
+        "type": "text",
+        "id": "lesson3_slide7_element1",
+        "content": "Лазерные диоды (LD): Принцип работы",
+        "positioning": {
+          "top": "5%",
+          "left": "5%",
+          "width": "90%",
+          "height": "auto"
+        },
+        "fontSize": "48px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide7_element2",
+        "content": "Лазерный диод (полупроводниковый лазер) – это оптоэлектронный прибор, излучающий когерентный свет. Его работа основана на явлении **вынужденного (стимулированного) излучения** в полупроводниковом p-n переходе или гетероструктуре.",
+        "positioning": {
+          "top": "18%",
+          "left": "7%",
+          "width": "86%",
+          "height": "auto"
+        },
+        "fontSize": "28px"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide7_element3",
+        "content": "Ключевые элементы и процессы:",
+        "positioning": {
+          "top": "30%",
+          "left": "7%",
+          "width": "40%",
+          "height": "auto"
+        },
+        "fontSize": "26px"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide7_element4",
+        "content": "1.  **Активная среда:** Специально легированная область p-n перехода (или более сложная гетероструктура), где создается инверсия населенностей энергетических уровней.\n2.  **Инжекция носителей:** При пропускании прямого тока выше порогового значения, в активную область инжектируется большое количество электронов и дырок.\n3.  **Инверсия населенностей:** Концентрация электронов на более высоких энергетических уровнях превышает их концентрацию на более низких (основных) уровнях.\n4.  **Вынужденное излучение:** Фотон, возникший в результате спонтанной рекомбинации, пролетая мимо возбужденного атома (электронно-дырочной пары), стимулирует его излучить идентичный фотон (той же энергии, фазы, поляризации и направления распространения). Это приводит к лавинообразному нарастанию числа фотонов – усилению света.\n5.  **Оптический резонатор:** Для обеспечения генерации лазерного излучения активная среда помещается в оптический резонатор. Обычно это две параллельные зеркальные грани кристалла (резонатор Фабри-Перо), обеспечивающие многократное прохождение света через активную среду и положительную обратную связь.",
+        "positioning": {
+          "top": "38%",
+          "left": "7%",
+          "width": "45%",
+          "height": "auto"
+        },
+        "fontSize": "20px"
+      },
+      {
+        "type": "image",
+        "id": "lesson3_slide7_element5",
+        "url": "https://dummyimage.com/550x400/eee/000.png&text=Схема+Лазерного+Диода",
+        "altText": "Упрощенная схема работы лазерного диода с резонатором Фабри-Перо",
+        "caption": "Рис. 4. Принцип работы лазерного диода.",
+        "positioning": {
+          "top": "30%",
+          "left": "55%",
+          "width": "550px",
+          "height": "400px"
+        }
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide7_element6",
+        "content": "Условие генерации: усиление света в активной среде должно превышать потери в резонаторе.",
+        "positioning": {
+          "top": "80%",
+          "left": "55%",
+          "width": "40%",
+          "height": "auto"
+        },
+        "fontSize": "20px",
+        "fontWidth": "italic"
+      }
+    ]
+  },
+  {
+    "id": "lesson3_slide_8",
+    "elements": [
+      {
+        "type": "text",
+        "id": "lesson3_slide8_element1",
+        "content": "Характеристики лазерных диодов (LD)",
+        "positioning": {
+          "top": "3%",
+          "left": "5%",
+          "width": "90%",
+          "height": "auto"
+        },
+        "fontSize": "48px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide8_element2",
+        "content": "Лазерные диоды обладают рядом преимуществ по сравнению со светодиодами, что делает их предпочтительными для высокоскоростных и дальнодействующих ВОСП:",
+        "positioning": {
+          "top": "12%",
+          "left": "7%",
+          "width": "86%",
+          "height": "auto"
+        },
+        "fontSize": "28px"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide8_element3",
+        "content": "1. Спектр излучения:",
+        "positioning": {
+          "top": "20%",
+          "left": "7%",
+          "width": "43%",
+          "height": "auto"
+        },
+        "fontSize": "24px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide8_element4",
+        "content": "Очень узкий спектр (Δλ от 0.001 нм до нескольких нм). Это значительно снижает хроматическую дисперсию в волокне, позволяя передавать сигналы на большие расстояния с высокой скоростью.",
+        "positioning": {
+          "top": "25%",
+          "left": "9%",
+          "width": "40%",
+          "height": "auto"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide8_element5",
+        "content": "2. Оптическая мощность:",
+        "positioning": {
+          "top": "38%",
+          "left": "7%",
+          "width": "43%",
+          "height": "auto"
+        },
+        "fontSize": "24px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide8_element6",
+        "content": "Высокая выходная мощность (от милливатт до десятков и даже сотен милливатт), и высокая эффективность ввода в одномодовое волокно (до 50-80%).",
+        "positioning": {
+          "top": "43%",
+          "left": "9%",
+          "width": "40%",
+          "height": "auto"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide8_element7",
+        "content": "3. Когерентность:",
+        "positioning": {
+          "top": "56%",
+          "left": "7%",
+          "width": "43%",
+          "height": "auto"
+        },
+        "fontSize": "24px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide8_element8",
+        "content": "Излучение лазерных диодов обладает высокой степенью когерентности (пространственной и временной), что важно для некоторых приложений (например, когерентные системы связи, интерферометрия).",
+        "positioning": {
+          "top": "61%",
+          "left": "9%",
+          "width": "40%",
+          "height": "auto"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide8_element9",
+        "content": "4. Быстродействие (скорость модуляции):",
+        "positioning": {
+          "top": "20%",
+          "left": "53%",
+          "width": "43%",
+          "height": "auto"
+        },
+        "fontSize": "24px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide8_element10",
+        "content": "Очень высокое, позволяет модулировать сигнал с частотами до десятков ГГц, обеспечивая скорости передачи данных до 100 Гбит/с и выше на одной длине волны.",
+        "positioning": {
+          "top": "25%",
+          "left": "55%",
+          "width": "40%",
+          "height": "auto"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide8_element11",
+        "content": "5. Диаграмма направленности:",
+        "positioning": {
+          "top": "38%",
+          "left": "53%",
+          "width": "43%",
+          "height": "auto"
+        },
+        "fontSize": "24px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide8_element12",
+        "content": "Узкая диаграмма направленности (несколько градусов), что обеспечивает эффективный ввод излучения в одномодовые волокна.",
+        "positioning": {
+          "top": "43%",
+          "left": "55%",
+          "width": "40%",
+          "height": "auto"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide8_element13",
+        "content": "6. Пороговый ток:",
+        "positioning": {
+          "top": "56%",
+          "left": "53%",
+          "width": "43%",
+          "height": "auto"
+        },
+        "fontSize": "24px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide8_element14",
+        "content": "Лазерная генерация начинается только при достижении тока накачки определенного порогового значения. Ниже порога ЛД работает как светодиод.",
+        "positioning": {
+          "top": "61%",
+          "left": "55%",
+          "width": "40%",
+          "height": "auto"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide8_element15",
+        "content": "Недостатки: более высокая стоимость, сложность схем управления (стабилизация температуры и мощности), чувствительность к статическому электричеству.",
+        "positioning": {
+          "top": "80%",
+          "left": "7%",
+          "width": "86%",
+          "height": "auto"
+        },
+        "fontSize": "22px",
+        "fontWidth": "italic"
+      }
+    ]
+  },
+  {
+    "id": "lesson3_slide_9",
+    "elements": [
+      {
+        "type": "text",
+        "id": "lesson3_slide9_element1",
+        "content": "Типы лазерных диодов (LD)",
+        "positioning": {
+          "top": "5%",
+          "left": "5%",
+          "width": "90%",
+          "height": "auto"
+        },
+        "fontSize": "48px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide9_element2",
+        "content": "Существует несколько основных типов лазерных диодов, различающихся конструкцией резонатора и, как следствие, спектральными и другими характеристиками:",
+        "positioning": {
+          "top": "15%",
+          "left": "7%",
+          "width": "86%",
+          "height": "auto"
+        },
+        "fontSize": "26px"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide9_element3",
+        "content": "1. Лазеры Фабри-Перо (FP-LD - Fabry-Perot Laser Diode):",
+        "positioning": {
+          "top": "25%",
+          "left": "7%",
+          "width": "86%",
+          "height": "auto"
+        },
+        "fontSize": "24px",
+        "fontWidth": "600"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide9_element4",
+        "content": "Простейший тип. Оптический резонатор образован двумя параллельными торцевыми гранями кристалла (естественными сколами или полированными зеркалами). Имеют многомодовый спектр излучения (несколько близкорасположенных продольных мод). Относительно недорогие, используются в системах со скоростями до 2.5-10 Гбит/с на небольшие и средние расстояния.",
+        "positioning": {
+          "top": "31%",
+          "left": "9%",
+          "width": "82%",
+          "height": "auto"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "image",
+        "id": "lesson3_slide9_element5",
+        "url": "https://dummyimage.com/300x200/eee/000.png&text=FP-LD",
+        "altText": "Схема лазера Фабри-Перо",
+        "positioning": {
+          "top": "40%",
+          "left": "10%",
+          "width": "300px",
+          "height": "auto"
+        }
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide9_element6",
+        "content": "2. Лазеры с распределённой обратной связью (DFB-LD - Distributed Feedback Laser Diode):",
+        "positioning": {
+          "top": "25%",
+          "left": "50%",
+          "width": "48%",
+          "height": "auto"
+        },
+        "fontSize": "24px",
+        "fontWidth": "600"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide9_element7",
+        "content": "Имеют встроенную в активную область дифракционную решетку, которая обеспечивает селекцию одной продольной моды. Генерируют одночастотное (одномодовое по спектру) излучение с очень узкой спектральной линией. Используются в высокоскоростных (10 Гбит/с и выше) и дальнодействующих системах, включая системы со спектральным уплотнением (DWDM).",
+        "positioning": {
+          "top": "31%",
+          "left": "52%",
+          "width": "44%",
+          "height": "auto"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "image",
+        "id": "lesson3_slide9_element8",
+        "url": "https://dummyimage.com/300x200/eee/000.png&text=DFB-LD",
+        "altText": "Схема лазера DFB",
+        "positioning": {
+          "top": "40%",
+          "left": "55%",
+          "width": "300px",
+          "height": "auto"
+        }
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide9_element9",
+        "content": "3. Вертикально-излучающие лазеры с поверхностным резонатором (VCSEL - Vertical-Cavity Surface-Emitting Laser):",
+        "positioning": {
+          "top": "60%",
+          "left": "7%",
+          "width": "86%",
+          "height": "auto"
+        },
+        "fontSize": "24px",
+        "fontWidth": "600"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide9_element10",
+        "content": "Излучают свет перпендикулярно поверхности кристалла. Резонатор очень короткий, образован многослойными диэлектрическими зеркалами (брегговскими отражателями). Имеют малый пороговый ток, низкое энергопотребление, позволяют формировать 2D-массивы. Чаще всего работают на длинах волн 0.85 мкм и используются в коротких линиях связи (до нескольких сотен метров), локальных сетях (Gigabit Ethernet, Fibre Channel), оптических межсоединениях.",
+        "positioning": {
+          "top": "66%",
+          "left": "9%",
+          "width": "82%",
+          "height": "auto"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "image",
+        "id": "lesson3_slide9_element11",
+        "url": "https://dummyimage.com/300x200/eee/000.png&text=VCSEL",
+        "altText": "Схема VCSEL лазера",
+        "positioning": {
+          "top": "78%",
+          "left": "35%",
+          "width": "300px",
+          "height": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lesson3_slide_10",
+    "elements": [
+      {
+        "type": "text",
+        "id": "lesson3_slide10_element1",
+        "content": "Применение лазерных диодов (LD) в ВОСП",
+        "positioning": {
+          "top": "5%",
+          "left": "5%",
+          "width": "90%",
+          "height": "auto"
+        },
+        "fontSize": "48px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide10_element2",
+        "content": "Благодаря своим уникальным характеристикам, лазерные диоды являются основным выбором для построения высокопроизводительных волоконно-оптических систем передачи.",
+        "positioning": {
+          "top": "18%",
+          "left": "7%",
+          "width": "86%",
+          "height": "auto"
+        },
+        "fontSize": "28px"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide10_element3",
+        "content": "Основные области применения LD:",
+        "positioning": {
+          "top": "28%",
+          "left": "7%",
+          "width": "86%",
+          "height": "auto"
+        },
+        "fontSize": "26px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide10_element4",
+        "content": "•  **Магистральные ВОСП большой дальности:** Трансокеанские и межконтинентальные линии связи, где требуется передача огромных объемов данных на тысячи километров без регенерации (с использованием оптических усилителей). Преимущественно используются DFB-лазеры и одномодовые волокна.\n•  **Высокоскоростные городские и региональные сети (MAN, WAN):** Скорости передачи 10 Гбит/с, 40 Гбит/с, 100 Гбит/с и выше.\n•  **Системы со спектральным уплотнением каналов (WDM, DWDM, CWDM):** Требуются источники с узкой и стабильной по длине волны линией излучения (в основном DFB-лазеры).\n•  **Сети доступа нового поколения (NGN, FTTx - Fiber to the x):** Например, GPON, XG-PON, где требуется высокая пропускная способность и работа на различных длинах волн.\n•  **Кабельное телевидение (CATV):** Для передачи аналоговых и цифровых видеосигналов на большие расстояния с высоким качеством.\n•  **Центры обработки данных (ЦОД):** Для высокоскоростных оптических межсоединений между серверами и коммутаторами (часто используются VCSEL для коротких дистанций и FP/DFB для более длинных).\n•  **Беспроводные сети 5G и выше:** Для подключения базовых станций (fronthaul, midhaul, backhaul).",
+        "positioning": {
+          "top": "35%",
+          "left": "10%",
+          "width": "80%",
+          "height": "auto"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "image",
+        "id": "lesson3_slide10_element5",
+        "url": "https://dummyimage.com/600x300/eee/000.png&text=Применение+LD+в+ВОСП",
+        "altText": "Схема применения лазерных диодов в различных сегментах ВОСП",
+        "positioning": {
+          "top": "75%",
+          "left": "center",
+          "width": "600px",
+          "height": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lesson3_slide_11",
+    "elements": [
+      {
+        "type": "text",
+        "id": "lesson3_slide11_element1",
+        "content": "Сравнение светодиодов (LED) и лазерных диодов (LD)",
+        "positioning": {
+          "top": "2%",
+          "left": "5%",
+          "width": "90%",
+          "height": "auto"
+        },
+        "fontSize": "44px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide11_element2",
+        "content": "| Характеристика             | Светодиод (LED)                                  | Лазерный диод (LD)                                       |",
+        "positioning": {
+          "top": "12%",
+          "left": "5%",
+          "width": "90%",
+          "height": "auto"
+        },
+        "fontSize": "20px",
+        "fontFamily": "monospace"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide11_element3",
+        "content": "|---------------------------|---------------------------------------------------|----------------------------------------------------------|",
+        "positioning": {
+          "top": "15%",
+          "left": "5%",
+          "width": "90%",
+          "height": "auto"
+        },
+        "fontSize": "20px",
+        "fontFamily": "monospace"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide11_element4",
+        "content": "| Принцип излучения         | Спонтанное (некогерентное)                        | Вынужденное (когерентное)                                |",
+        "positioning": {
+          "top": "18%",
+          "left": "5%",
+          "width": "90%",
+          "height": "auto"
+        },
+        "fontSize": "20px",
+        "fontFamily": "monospace"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide11_element5",
+        "content": "| Ширина спектра (Δλ)       | Широкая (30-150 нм)                               | Узкая (0.001-5 нм)                                       |",
+        "positioning": {
+          "top": "21%",
+          "left": "5%",
+          "width": "90%",
+          "height": "auto"
+        },
+        "fontSize": "20px",
+        "fontFamily": "monospace"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide11_element6",
+        "content": "| Выходная мощность         | Низкая (мкВт - единицы мВт)                      | Высокая (мВт - десятки и сотни мВт)                      |",
+        "positioning": {
+          "top": "24%",
+          "left": "5%",
+          "width": "90%",
+          "height": "auto"
+        },
+        "fontSize": "20px",
+        "fontFamily": "monospace"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide11_element7",
+        "content": "| Эффективность ввода в ОВ  | Низкая (особенно в одномодовое)                   | Высокая (особенно в одномодовое)                         |",
+        "positioning": {
+          "top": "27%",
+          "left": "5%",
+          "width": "90%",
+          "height": "auto"
+        },
+        "fontSize": "20px",
+        "fontFamily": "monospace"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide11_element8",
+        "content": "| Скорость модуляции        | Низкая (до ~622 Мбит/с)                           | Высокая (Гбит/с - десятки Гбит/с)                        |",
+        "positioning": {
+          "top": "30%",
+          "left": "5%",
+          "width": "90%",
+          "height": "auto"
+        },
+        "fontSize": "20px",
+        "fontFamily": "monospace"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide11_element9",
+        "content": "| Диаграмма направленности  | Широкая                                           | Узкая                                                    |",
+        "positioning": {
+          "top": "33%",
+          "left": "5%",
+          "width": "90%",
+          "height": "auto"
+        },
+        "fontSize": "20px",
+        "fontFamily": "monospace"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide11_element10",
+        "content": "| Когерентность             | Низкая                                            | Высокая                                                  |",
+        "positioning": {
+          "top": "36%",
+          "left": "5%",
+          "width": "90%",
+          "height": "auto"
+        },
+        "fontSize": "20px",
+        "fontFamily": "monospace"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide11_element11",
+        "content": "| Стоимость                 | Низкая                                            | Высокая                                                  |",
+        "positioning": {
+          "top": "39%",
+          "left": "5%",
+          "width": "90%",
+          "height": "auto"
+        },
+        "fontSize": "20px",
+        "fontFamily": "monospace"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide11_element12",
+        "content": "| Срок службы / Надежность  | Очень высокий                                     | Высокий (но ниже, чем у LED)                             |",
+        "positioning": {
+          "top": "42%",
+          "left": "5%",
+          "width": "90%",
+          "height": "auto"
+        },
+        "fontSize": "20px",
+        "fontFamily": "monospace"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide11_element13",
+        "content": "| Сложность схемы управления| Простая                                           | Более сложная (термостабилизация, контроль мощности)     |",
+        "positioning": {
+          "top": "45%",
+          "left": "5%",
+          "width": "90%",
+          "height": "auto"
+        },
+        "fontSize": "20px",
+        "fontFamily": "monospace"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide11_element14",
+        "content": "| Температурная стабильность| Хорошая                                           | Умеренная (требуется контроль температуры для DFB, FP)    |",
+        "positioning": {
+          "top": "48%",
+          "left": "5%",
+          "width": "90%",
+          "height": "auto"
+        },
+        "fontSize": "20px",
+        "fontFamily": "monospace"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide11_element15",
+        "content": "| Основное применение       | Короткие линии, многомодовое ОВ, низкие скорости | Длинные линии, одномодовое ОВ, высокие скорости, WDM     |",
+        "positioning": {
+          "top": "51%",
+          "left": "5%",
+          "width": "90%",
+          "height": "auto"
+        },
+        "fontSize": "20px",
+        "fontFamily": "monospace"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide11_element16",
+        "content": "Выбор между LED и LD зависит от конкретных требований к ВОСП: дальность, скорость, тип волокна, бюджет.",
+        "positioning": {
+          "top": "60%",
+          "left": "7%",
+          "width": "86%",
+          "height": "auto"
+        },
+        "fontSize": "24px"
+      },
+      {
+        "type": "image",
+        "id": "lesson3_slide11_element17",
+        "url": "https://dummyimage.com/300x200/eee/000.png&text=LED+vs+LD",
+        "altText": "Сравнение LED и LD",
+        "positioning": {
+          "top": "68%",
+          "left": "15%",
+          "width": "300px",
+          "height": "auto"
+        }
+      },
+      {
+        "type": "image",
+        "id": "lesson3_slide11_element18",
+        "url": "https://dummyimage.com/300x200/eee/000.png&text=LD+vs+LED",
+        "altText": "Сравнение LD и LED",
+        "positioning": {
+          "top": "68%",
+          "left": "55%",
+          "width": "300px",
+          "height": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lesson3_slide_12",
+    "elements": [
+      {
+        "type": "text",
+        "id": "lesson3_slide12_element1",
+        "content": "Ключевые параметры оптических излучателей",
+        "positioning": {
+          "top": "3%",
+          "left": "5%",
+          "width": "90%",
+          "height": "auto"
+        },
+        "fontSize": "44px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide12_element2",
+        "content": "1. Рабочая длина волны (λ):",
+        "positioning": {
+          "top": "15%",
+          "left": "7%",
+          "width": "86%",
+          "height": "auto"
+        },
+        "fontSize": "26px",
+        "fontWidth": "600"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide12_element3",
+        "content": "Длина волны света, на которой излучатель работает наиболее эффективно. Для ВОСП это обычно окна прозрачности оптического волокна: ~0.85 мкм (первое), ~1.31 мкм (второе), ~1.55 мкм (третье).",
+        "positioning": {
+          "top": "21%",
+          "left": "9%",
+          "width": "82%",
+          "height": "auto"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide12_element4",
+        "content": "2. Выходная оптическая мощность (P<sub>out</sub>):",
+        "positioning": {
+          "top": "30%",
+          "left": "7%",
+          "width": "86%",
+          "height": "auto"
+        },
+        "fontSize": "26px",
+        "fontWidth": "600"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide12_element5",
+        "content": "Мощность оптического излучения, выводимая из излучателя или вводимая в оптическое волокно. Измеряется в мВт или дБм.",
+        "positioning": {
+          "top": "36%",
+          "left": "9%",
+          "width": "82%",
+          "height": "auto"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide12_element6",
+        "content": "3. Ширина спектральной линии (Δλ):",
+        "positioning": {
+          "top": "45%",
+          "left": "7%",
+          "width": "86%",
+          "height": "auto"
+        },
+        "fontSize": "26px",
+        "fontWidth": "600"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide12_element7",
+        "content": "Диапазон длин волн, в котором сосредоточена основная часть излучаемой мощности. Важный параметр, влияющий на хроматическую дисперсию.",
+        "positioning": {
+          "top": "51%",
+          "left": "9%",
+          "width": "82%",
+          "height": "auto"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide12_element8",
+        "content": "4. Время нарастания (t<sub>r</sub>) и время спада (t<sub>f</sub>) импульса:",
+        "positioning": {
+          "top": "60%",
+          "left": "7%",
+          "width": "86%",
+          "height": "auto"
+        },
+        "fontSize": "26px",
+        "fontWidth": "600"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide12_element9",
+        "content": "Время, за которое мощность оптического импульса нарастает от 10% до 90% (t<sub>r</sub>) и спадает от 90% до 10% (t<sub>f</sub>) от своего максимального значения. Определяют максимальную скорость модуляции.",
+        "positioning": {
+          "top": "66%",
+          "left": "9%",
+          "width": "82%",
+          "height": "auto"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide12_element10",
+        "content": "Другие важные параметры: пороговый ток (для LD), дифференциальная эффективность, диапазон рабочих температур, напряжение питания, срок службы, коэффициент экстинкции (для цифровой модуляции).",
+        "positioning": {
+          "top": "78%",
+          "left": "7%",
+          "width": "86%",
+          "height": "auto"
+        },
+        "fontSize": "22px"
+      }
+    ]
+  },
+  {
+    "id": "lesson3_slide_13",
+    "elements": [
+      {
+        "type": "text",
+        "id": "lesson3_slide13_element1",
+        "content": "Схемы драйверов LED и LD",
+        "positioning": {
+          "top": "5%",
+          "left": "5%",
+          "width": "90%",
+          "height": "auto"
+        },
+        "fontSize": "48px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide13_element2",
+        "content": "Драйвер – это электронная схема, управляющая работой оптического излучателя, обеспечивающая его питание и модуляцию в соответствии с информационным сигналом.",
+        "positioning": {
+          "top": "18%",
+          "left": "7%",
+          "width": "86%",
+          "height": "auto"
+        },
+        "fontSize": "28px"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide13_element3",
+        "content": "Основные требования к драйверам:",
+        "positioning": {
+          "top": "28%",
+          "left": "7%",
+          "width": "43%",
+          "height": "auto"
+        },
+        "fontSize": "26px",
+        "fontWidth": "600"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide13_element4",
+        "content": "•  Обеспечение стабильного тока смещения.\n•  Быстрая модуляция тока в соответствии с входным сигналом.\n•  Защита излучателя от перегрузок по току и напряжению.\n•  Минимальные собственные шумы и искажения.\n•  Для LD: стабилизация рабочей температуры (часто с помощью элемента Пельтье) и оптической мощности (с помощью фотодиода обратной связи).",
+        "positioning": {
+          "top": "35%",
+          "left": "7%",
+          "width": "43%",
+          "height": "auto"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide13_element5",
+        "content": "Драйверы LED:",
+        "positioning": {
+          "top": "60%",
+          "left": "7%",
+          "width": "43%",
+          "height": "auto"
+        },
+        "fontSize": "24px",
+        "fontWidth": "600"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide13_element6",
+        "content": "Обычно проще драйверов LD. Часто представляют собой управляемый источник тока на основе транзистора. Для аналоговой модуляции ток меняется пропорционально сигналу, для цифровой – ключ.",
+        "positioning": {
+          "top": "66%",
+          "left": "7%",
+          "width": "43%",
+          "height": "auto"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "image",
+        "id": "lesson3_slide13_element7",
+        "url": "https://dummyimage.com/400x250/eee/000.png&text=Схема+драйвера+LED",
+        "altText": "Упрощенная схема драйвера LED",
+        "positioning": {
+          "top": "35%",
+          "left": "55%",
+          "width": "400px",
+          "height": "auto"
+        }
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide13_element8",
+        "content": "Драйверы LD:",
+        "positioning": {
+          "top": "60%",
+          "left": "53%",
+          "width": "43%",
+          "height": "auto"
+        },
+        "fontSize": "24px",
+        "fontWidth": "600"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide13_element9",
+        "content": "Более сложные. Включают цепи стабилизации тока смещения, мощности (APC - Automatic Power Control) и температуры (ATC - Automatic Temperature Control). Требуют точного поддержания тока выше порогового.",
+        "positioning": {
+          "top": "66%",
+          "left": "53%",
+          "width": "43%",
+          "height": "auto"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "image",
+        "id": "lesson3_slide13_element10",
+        "url": "https://dummyimage.com/400x250/eee/000.png&text=Схема+драйвера+LD+с+APC/ATC",
+        "altText": "Упрощенная схема драйвера LD",
+        "positioning": {
+          "top": "75%",
+          "left": "center",
+          "width": "400px",
+          "height": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lesson3_slide_14",
+    "elements": [
+      {
+        "type": "text",
+        "id": "lesson3_slide14_element1",
+        "content": "Безопасность при работе с лазерами",
+        "positioning": {
+          "top": "5%",
+          "left": "5%",
+          "width": "90%",
+          "height": "auto"
+        },
+        "fontSize": "48px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide14_element2",
+        "content": "Лазерное излучение, особенно невидимое инфракрасное, может представлять опасность для зрения и кожи. Важно соблюдать меры предосторожности при работе с лазерными диодами и системами на их основе.",
+        "positioning": {
+          "top": "18%",
+          "left": "7%",
+          "width": "86%",
+          "height": "auto"
+        },
+        "fontSize": "28px"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide14_element3",
+        "content": "Классификация лазерной опасности (согласно IEC 60825-1):",
+        "positioning": {
+          "top": "30%",
+          "left": "7%",
+          "width": "86%",
+          "height": "auto"
+        },
+        "fontSize": "26px",
+        "fontWidth": "600"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide14_element4",
+        "content": "•  **Класс 1:** Безопасны при нормальных условиях эксплуатации. Излучение полностью скрыто или его мощность очень мала. (Многие ВОСП терминалы).\n•  **Класс 1M:** Безопасны для невооруженного глаза. Опасны при использовании оптических приборов (лупы, телескопы).\n•  **Класс 2:** Видимое излучение (400-700 нм). Естественная реакция моргания защищает глаз. Мощность до 1 мВт.\n•  **Класс 2M:** Аналогично Классу 2, но опасны при использовании оптики.\n•  **Класс 3R:** Излучение может быть опасно. Риск невелик, если время экспозиции мало. Мощность до 5 мВт для видимого диапазона.\n•  **Класс 3B:** Прямое облучение опасно для глаз. Диффузное отражение обычно безопасно. Мощность до 500 мВт (непрерывное).\n•  **Класс 4:** Самый опасный класс. Опасно прямое и диффузно отраженное излучение. Могут вызывать повреждения кожи и возгорание материалов. (Мощные промышленные, медицинские лазеры, некоторые LD высокой мощности).",
+        "positioning": {
+          "top": "38%",
+          "left": "10%",
+          "width": "80%",
+          "height": "auto"
+        },
+        "fontSize": "20px"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide14_element5",
+        "content": "Основные меры предосторожности:",
+        "positioning": {
+          "top": "70%",
+          "left": "7%",
+          "width": "86%",
+          "height": "auto"
+        },
+        "fontSize": "26px",
+        "fontWidth": "600"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide14_element6",
+        "content": "•  Никогда не направляйте лазерный луч в глаза.\n•  Не смотрите в торец оптического кабеля или коннектора, если есть вероятность, что на другом конце работает излучатель.\n•  Используйте защитные очки, соответствующие длине волны и мощности излучения, при работе с открытыми лазерами классов 3B и 4.\n•  Соблюдайте предупреждающие знаки и инструкции.\n•  Отключайте питание перед рассоединением оптических коннекторов в мощных системах.",
+        "positioning": {
+          "top": "77%",
+          "left": "10%",
+          "width": "80%",
+          "height": "auto"
+        },
+        "fontSize": "20px"
+      },
+      {
+        "type": "image",
+        "id": "lesson3_slide14_element7",
+        "url": "https://dummyimage.com/150x150/eee/000.png&text=Laser+Warning+Sign",
+        "altText": "Предупреждающий знак лазерной опасности",
+        "positioning": {
+          "top": "15%",
+          "right": "10%",
+          "width": "150px",
+          "height": "150px"
+        }
+      }
+    ]
+  },
+  {
+    "id": "lesson3_slide_15",
+    "elements": [
+      {
+        "type": "text",
+        "id": "lesson3_slide15_element1",
+        "content": "Итоги: Ключевые моменты об оптических излучателях в ВОСП",
+        "positioning": {
+          "top": "5%",
+          "left": "5%",
+          "width": "90%",
+          "height": "auto"
+        },
+        "fontSize": "48px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide15_element2",
+        "content": "1.  **Роль излучателей:** Оптические излучатели – это полупроводниковые устройства, преобразующие электрические сигналы в световые для передачи по волоконно-оптическим линиям. Являются критически важными активными компонентами ВОСП.",
+        "positioning": {
+          "top": "15%",
+          "left": "7%",
+          "width": "86%",
+          "height": "auto"
+        },
+        "fontSize": "24px"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide15_element3",
+        "content": "2.  **Основные типы:** Два главных типа – светоизлучающие диоды (LED) и лазерные диоды (LD).",
+        "positioning": {
+          "top": "25%",
+          "left": "7%",
+          "width": "86%",
+          "height": "auto"
+        },
+        "fontSize": "24px"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide15_element4",
+        "content": "3.  **Светодиоды (LED):**\n    •   Работают на принципе спонтанной инжекционной электролюминесценции.\n    •   Характеризуются широким спектром, меньшей мощностью, более медленным откликом, но низкой стоимостью и высокой надежностью.\n    •   Применяются в ВОСП малой/средней дальности, локальных сетях, обычно с многомодовыми волокнами.",
+        "positioning": {
+          "top": "33%",
+          "left": "7%",
+          "width": "86%",
+          "height": "auto"
+        },
+        "fontSize": "24px"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide15_element5",
+        "content": "4.  **Лазерные диоды (LD):**\n    •   Работают на принципе вынужденного излучения в оптическом резонаторе.\n    •   Обладают узким спектром, высокой мощностью, высоким быстродействием, когерентностью.\n    •   Используются в магистральных ВОСП, высокоскоростных системах, WDM, обычно с одномодовыми волокнами. Основные типы: FP, DFB, VCSEL.",
+        "positioning": {
+          "top": "50%",
+          "left": "7%",
+          "width": "86%",
+          "height": "auto"
+        },
+        "fontSize": "24px"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide15_element6",
+        "content": "5.  **Ключевые параметры:** Длина волны, оптическая мощность, ширина спектральной линии, время нарастания/спада импульса – определяют производительность и область применения излучателя.",
+        "positioning": {
+          "top": "67%",
+          "left": "7%",
+          "width": "86%",
+          "height": "auto"
+        },
+        "fontSize": "24px"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide15_element7",
+        "content": "6.  **Драйверы:** Необходимы для управления работой излучателей, обеспечения стабильности и модуляции. Драйверы LD сложнее из-за необходимости контроля температуры и мощности.",
+        "positioning": {
+          "top": "77%",
+          "left": "7%",
+          "width": "86%",
+          "height": "auto"
+        },
+        "fontSize": "24px"
+      },
+      {
+        "type": "text",
+        "id": "lesson3_slide15_element8",
+        "content": "7.  **Безопасность:** Лазерное излучение может быть опасным. Необходимо знать классы лазерной опасности и соблюдать меры предосторожности.",
+        "positioning": {
+          "top": "87%",
+          "left": "7%",
+          "width": "86%",
+          "height": "auto"
+        },
+        "fontSize": "24px"
+      }
+    ]
+  }
+]

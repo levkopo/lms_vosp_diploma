@@ -1,0 +1,1129 @@
+[
+  {
+    "id": "slide1_intro",
+    "elements": [
+      {
+        "type": "text",
+        "id": "s1_title",
+        "content": "Введение в волоконно-оптические системы передачи (ВОСП)",
+        "positioning": {
+          "top": "5%",
+          "left": "5%",
+          "width": "90%",
+          "textAlign": "center"
+        },
+        "fontSize": "48px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "s1_definition",
+        "content": "Волоконно-оптическая система передачи (ВОСП) — это система передачи информации, в которой в качестве среды передачи используются оптические волокна, а в качестве носителя информации — электромагнитное излучение оптического диапазона (свет).\n\nВОСП являются основой современных телекоммуникационных сетей, обеспечивая высокоскоростную передачу больших объемов данных на значительные расстояния.",
+        "positioning": {
+          "top": "20%",
+          "left": "10%",
+          "width": "55%",
+          "height": "auto"
+        },
+        "fontSize": "28px"
+      },
+      {
+        "type": "image",
+        "id": "s1_image",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Optical_fibre_and_light_propagation.jpg/800px-Optical_fibre_and_light_propagation.jpg",
+        "altText": "Распространение света в оптическом волокне",
+        "caption": "Принцип полного внутреннего отражения в оптическом волокне",
+        "positioning": {
+          "top": "25%",
+          "left": "70%",
+          "width": "25%",
+          "height": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "slide2_pros_cons",
+    "elements": [
+      {
+        "type": "text",
+        "id": "s2_title",
+        "content": "Преимущества и недостатки ВОСП",
+        "positioning": {
+          "top": "5%",
+          "left": "5%",
+          "width": "90%",
+          "textAlign": "center"
+        },
+        "fontSize": "48px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "s2_subtitle_pros",
+        "content": "Преимущества:",
+        "positioning": {
+          "top": "15%",
+          "left": "5%",
+          "width": "40%"
+        },
+        "fontSize": "32px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "s2_pros_list",
+        "content": "- Широкая полоса пропускания (высокая скорость передачи до Тбит/с)\n- Низкое затухание сигнала (0.15-0.2 дБ/км на длине волны 1.55 мкм)\n- Высокая помехозащищенность (невосприимчивость к ЭМП)\n- Малый вес и объем (экономия места и снижение нагрузок)\n- Информационная безопасность (трудность несанкционированного доступа)\n- Долговечность (срок службы более 25 лет)\n- Гальваническая развязка компонентов",
+        "positioning": {
+          "top": "22%",
+          "left": "5%",
+          "width": "40%",
+          "height": "auto"
+        },
+        "fontSize": "24px"
+      },
+      {
+        "type": "text",
+        "id": "s2_subtitle_cons",
+        "content": "Недостатки:",
+        "positioning": {
+          "top": "15%",
+          "left": "55%",
+          "width": "40%"
+        },
+        "fontSize": "32px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "s2_cons_list",
+        "content": "- Относительно высокая стоимость компонентов (особенно активных)\n- Сложность монтажа и ремонта (требуется специальное оборудование и квалификация)\n- Необходимость преобразования сигналов (оптика-электричество и наоборот)\n- Чувствительность к ионизирующим излучениям (для стандартных волокон)\n- Механическая прочность (требуют защиты от изгибов и растяжений)",
+        "positioning": {
+          "top": "22%",
+          "left": "55%",
+          "width": "40%",
+          "height": "auto"
+        },
+        "fontSize": "24px"
+      }
+    ]
+  },
+  {
+    "id": "slide3_components",
+    "elements": [
+      {
+        "type": "text",
+        "id": "s3_title",
+        "content": "Основные компоненты ВОСП",
+        "positioning": {
+          "top": "5%",
+          "left": "5%",
+          "width": "90%",
+          "textAlign": "center"
+        },
+        "fontSize": "48px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "s3_intro",
+        "content": "Любая волоконно-оптическая система передачи состоит из трех основных групп компонентов:",
+        "positioning": {
+          "top": "15%",
+          "left": "5%",
+          "width": "90%"
+        },
+        "fontSize": "28px"
+      },
+      {
+        "type": "text",
+        "id": "s3_active_components",
+        "content": "1. Активные компоненты: генерируют, модулируют, усиливают и преобразуют оптические сигналы.\n   Примеры: лазеры (LD), светодиоды (LED), фотодиоды (PD), оптические усилители (EDFA, SOA).",
+        "positioning": {
+          "top": "25%",
+          "left": "5%",
+          "width": "90%",
+          "height": "auto"
+        },
+        "fontSize": "24px"
+      },
+      {
+        "type": "text",
+        "id": "s3_passive_components",
+        "content": "2. Пассивные компоненты: обеспечивают передачу, соединение, разветвление, фильтрацию оптических сигналов без их преобразования в электрические.\n   Примеры: оптические волокна, коннекторы, разветвители, аттенюаторы, мультиплексоры (WDM).",
+        "positioning": {
+          "top": "40%",
+          "left": "5%",
+          "width": "90%",
+          "height": "auto"
+        },
+        "fontSize": "24px"
+      },
+      {
+        "type": "text",
+        "id": "s3_cable_infra",
+        "content": "3. Кабельная инфраструктура: включает оптические кабели, муфты, кроссы (ODF), патч-корды, обеспечивающие защиту, организацию и коммутацию оптических волокон.",
+        "positioning": {
+          "top": "55%",
+          "left": "5%",
+          "width": "90%",
+          "height": "auto"
+        },
+        "fontSize": "24px"
+      },
+      {
+        "type": "image",
+        "id": "s3_diagram",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Optical_Fiber_Communication.svg/800px-Optical_Fiber_Communication.svg.png",
+        "altText": "Блок-схема ВОСП",
+        "caption": "Упрощенная схема ВОСП: передатчик - оптоволокно - приемник",
+        "positioning": {
+          "top": "68%",
+          "left": "25%",
+          "width": "50%",
+          "height": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "slide4_passive_components_detail",
+    "elements": [
+      {
+        "type": "text",
+        "id": "s4_title",
+        "content": "Пассивные компоненты ВОСП",
+        "positioning": {
+          "top": "5%",
+          "left": "5%",
+          "width": "90%",
+          "textAlign": "center"
+        },
+        "fontSize": "48px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "s4_intro",
+        "content": "Пассивные компоненты играют ключевую роль в построении оптической линии связи. Они не требуют электропитания для выполнения своих функций и не вносят преобразования оптического сигнала в электрический.",
+        "positioning": {
+          "top": "15%",
+          "left": "5%",
+          "width": "90%"
+        },
+        "fontSize": "26px"
+      },
+      {
+        "type": "text",
+        "id": "s4_list",
+        "content": "- Оптическое волокно: основная среда передачи.\n- Оптические коннекторы: обеспечивают разъемное соединение ОВ (типы: FC, SC, LC, ST).\n- Оптические адаптеры (розетки): соединяют коннекторы одного типа.\n- Оптические аттенюаторы: вносят фиксированное или переменное затухание в линию.\n- Оптические разветвители (сплиттеры/couplers): делят мощность оптического сигнала на несколько выходов или объединяют с нескольких входов.\n- Оптические мультиплексоры/демультиплексоры (WDM): объединяют (мультиплексируют) или разделяют (демультиплексируют) сигналы с разными длинами волн в одном ОВ.\n- Оптические изоляторы: пропускают свет только в одном направлении, предотвращая обратные отражения.\n- Оптические циркуляторы: направляют свет последовательно от одного порта к другому (например, 1->2, 2->3).",
+        "positioning": {
+          "top": "25%",
+          "left": "5%",
+          "width": "90%",
+          "height": "auto"
+        },
+        "fontSize": "22px"
+      }
+    ]
+  },
+  {
+    "id": "slide5_1_fiber_types",
+    "elements": [
+      {
+        "type": "text",
+        "id": "s5_1_title",
+        "content": "Оптические волокна: Типы",
+        "positioning": {
+          "top": "5%",
+          "left": "5%",
+          "width": "90%",
+          "textAlign": "center"
+        },
+        "fontSize": "48px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "s5_1_definition",
+        "content": "Оптическое волокно (ОВ) – это диэлектрический волновод цилиндрической формы, состоящий из сердцевины (core) и оболочки (cladding) с разными показателями преломления. Свет распространяется по сердцевине за счет эффекта полного внутреннего отражения на границе сердцевина-оболочка.",
+        "positioning": {
+          "top": "15%",
+          "left": "5%",
+          "width": "90%"
+        },
+        "fontSize": "26px"
+      },
+      {
+        "type": "text",
+        "id": "s5_1_classification_intro",
+        "content": "Основные типы ОВ классифицируются по профилю показателя преломления и количеству передаваемых мод:",
+        "positioning": {
+          "top": "28%",
+          "left": "5%",
+          "width": "90%"
+        },
+        "fontSize": "24px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "s5_1_profile_types",
+        "content": "По профилю показателя преломления:\n- Ступенчатое (Step-index): резкое изменение показателя преломления на границе сердцевина-оболочка.\n- Градиентное (Graded-index): плавное (параболическое) уменьшение показателя преломления от центра сердцевины к ее краю.",
+        "positioning": {
+          "top": "35%",
+          "left": "5%",
+          "width": "45%",
+          "height": "auto"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "text",
+        "id": "s5_1_mode_types",
+        "content": "По количеству передаваемых мод (путей распространения света):\n- Одномодовое (Single-mode, SMF): малый диаметр сердцевины (обычно 8-10 мкм), передает одну моду. Стандарт ITU-T G.652 (9/125 мкм). Для дальних и высокоскоростных систем.\n- Многомодовое (Multi-mode, MMF): больший диаметр сердцевины (50 мкм или 62.5 мкм), передает множество мод. Стандарты OM1-OM5 (50/125 мкм, 62.5/125 мкм). Для коротких расстояний (ЛВС, ЦОД).",
+        "positioning": {
+          "top": "35%",
+          "left": "52%",
+          "width": "43%",
+          "height": "auto"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "image",
+        "id": "s5_1_smf_mmf_image",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bd/Optical_fiber_types.svg/600px-Optical_fiber_types.svg.png",
+        "altText": "Типы ОВ: одномодовое и многомодовое (ступенчатое, градиентное)",
+        "caption": "Сравнение распространения света в одномодовом и многомодовом волокне",
+        "positioning": {
+          "top": "60%",
+          "left": "15%",
+          "width": "70%",
+          "height": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "slide5_2_fiber_params",
+    "elements": [
+      {
+        "type": "text",
+        "id": "s5_2_title",
+        "content": "Оптические волокна: Основные параметры",
+        "positioning": {
+          "top": "3%",
+          "left": "5%",
+          "width": "90%",
+          "textAlign": "center"
+        },
+        "fontSize": "44px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "s5_2_attenuation",
+        "content": "1. Затухание (Attenuation, α): Уменьшение мощности оптического сигнала при его распространении по волокну. Выражается в дБ/км. Зависит от длины волны (окна прозрачности: 0.85 мкм, 1.31 мкм, 1.55 мкм).",
+        "positioning": {
+          "top": "12%",
+          "left": "5%",
+          "width": "90%"
+        },
+        "fontSize": "20px"
+      },
+      {
+        "type": "text",
+        "id": "s5_2_dispersion_intro",
+        "content": "2. Дисперсия (Dispersion): Искажение (уширение) оптического импульса из-за разной скорости распространения его спектральных или модовых компонент. Ограничивает дальность и скорость передачи. Единицы: пс/(нм·км) для хроматической дисперсии.",
+        "positioning": {
+          "top": "20%",
+          "left": "5%",
+          "width": "55%"
+        },
+        "fontSize": "20px"
+      },
+      {
+        "type": "input",
+        "id": "D_slider",
+        "label": "Коэфф. хроматической дисперсии D (пс/(нм·км)):",
+        "inputType": "slider",
+        "defaultValue": 17,
+        "min": 1,
+        "max": 25,
+        "step": 1,
+        "positioning": {
+          "top": "30%",
+          "left": "5%",
+          "width": "55%"
+        }
+      },
+      {
+        "type": "linearGraph",
+        "id": "dispersion_graph",
+        "formulaParameters": {
+          "formula": "D_input * x",
+          "variables": [
+            {
+              "name": "D_input",
+              "inputId": "D_slider"
+            }
+          ]
+        },
+        "caption": "Зависимость уширения импульса Δτ от длины волокна L (при Δλ = 1 нм)",
+        "xAxisLabel": "Длина волокна L (км)",
+        "yAxisLabel": "Уширение импульса Δτ (пс)",
+        "domain": { "min": 0, "max": 100 },
+        "range": { "min": 0, "max": 2500 },
+        "positioning": {
+          "top": "38%",
+          "left": "5%",
+          "width": "55%",
+          "height": "300px"
+        }
+      },
+      {
+        "type": "text",
+        "id": "s5_2_na",
+        "content": "3. Числовая апертура (Numerical Aperture, NA): Характеризует способность волокна собирать (вводить) свет. NA = sin(θ_max), где θ_max - максимальный угол ввода луча в волокно. NA = sqrt(n_core² - n_cladding²).",
+        "positioning": {
+          "top": "20%",
+          "left": "62%",
+          "width": "33%"
+        },
+        "fontSize": "20px"
+      },
+      {
+        "type": "text",
+        "id": "s5_2_bandwidth",
+        "content": "4. Ширина полосы пропускания (Bandwidth): Диапазон частот, который может быть передан по волокну с приемлемым уровнем искажений. Для MMF часто указывается как произведение полосы на длину (МГц·км). Для SMF ограничена в основном дисперсией и нелинейными эффектами.",
+        "positioning": {
+          "top": "35%",
+          "left": "62%",
+          "width": "33%"
+        },
+        "fontSize": "20px"
+      },
+      {
+        "type": "text",
+        "id": "s5_2_mfd",
+        "content": "5. Диаметр модового поля (Mode Field Diameter, MFD): Для одномодовых волокон – эффективный поперечный размер области, в которой распространяется основная часть мощности моды. Важен для расчета потерь на соединениях и изгибах.",
+        "positioning": {
+          "top": "55%",
+          "left": "62%",
+          "width": "33%"
+        },
+        "fontSize": "20px"
+      },
+      {
+        "type": "text",
+        "id": "s5_2_graph_note",
+        "content": "Интерактивный график слева показывает, как изменяется полное уширение оптического импульса (Δτ) при его прохождении по волокну длиной L, в зависимости от выбранного коэффициента хроматической дисперсии D. Расчет ведется для спектральной ширины источника Δλ = 1 нм (Δτ = D * L * Δλ).",
+        "positioning": {
+          "top": "80%",
+          "left": "5%",
+          "width": "55%"
+        },
+        "fontSize": "16px"
+      }
+    ]
+  },
+  {
+    "id": "slide6_1_connector_types",
+    "elements": [
+      {
+        "type": "text",
+        "id": "s6_1_title",
+        "content": "Оптические соединители (коннекторы): Типы",
+        "positioning": {
+          "top": "5%",
+          "left": "5%",
+          "width": "90%",
+          "textAlign": "center"
+        },
+        "fontSize": "48px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "s6_1_intro",
+        "content": "Оптический коннектор предназначен для быстрого и многократного разъемного соединения оптических волокон или подключения их к активному/пассивному оборудованию. Основные элементы: наконечник (феррул) с отполированным торцом, корпус, хвостовик.",
+        "positioning": {
+          "top": "15%",
+          "left": "5%",
+          "width": "90%"
+        },
+        "fontSize": "26px"
+      },
+      {
+        "type": "text",
+        "id": "s6_1_types_header",
+        "content": "Распространенные типы коннекторов:",
+        "positioning": {
+          "top": "28%",
+          "left": "5%",
+          "width": "90%"
+        },
+        "fontSize": "24px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "s6_1_type_fc",
+        "content": "FC (Ferrule Connector/Fiber Channel): Металлический корпус, резьбовое соединение. Высокая надежность, виброустойчивость. Ранее широко использовался в телекоме, измерительном оборудовании.",
+        "positioning": {
+          "top": "35%",
+          "left": "5%",
+          "width": "42%",
+          "height": "auto"
+        },
+        "fontSize": "20px"
+      },
+      {
+        "type": "image",
+        "id": "s6_1_img_fc",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/FC_connector.jpg/300px-FC_connector.jpg",
+        "altText": "FC коннектор",
+        "positioning": {
+          "top": "45%",
+          "left": "18%",
+          "width": "10%",
+          "height": "auto"
+        }
+      },
+      {
+        "type": "text",
+        "id": "s6_1_type_sc",
+        "content": "SC (Subscriber Connector/Square Connector): Пластиковый корпус прямоугольного сечения, защелкивающееся соединение (push-pull). Простота и удобство подключения, высокая плотность монтажа. Широко используется в сетях передачи данных, СКС.",
+        "positioning": {
+          "top": "35%",
+          "left": "53%",
+          "width": "42%",
+          "height": "auto"
+        },
+        "fontSize": "20px"
+      },
+      {
+        "type": "image",
+        "id": "s6_1_img_sc",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/SC_connector_pair.jpg/300px-SC_connector_pair.jpg",
+        "altText": "SC коннектор",
+        "positioning": {
+          "top": "45%",
+          "left": "65%",
+          "width": "12%",
+          "height": "auto"
+        }
+      },
+      {
+        "type": "text",
+        "id": "s6_1_type_lc",
+        "content": "LC (Lucent Connector/Little Connector): Уменьшенная версия SC, пластиковый корпус, защелка. Высокая плотность портов (SFP-модули). Популярен в ЦОД, высокоскоростных сетях.",
+        "positioning": {
+          "top": "60%",
+          "left": "5%",
+          "width": "42%",
+          "height": "auto"
+        },
+        "fontSize": "20px"
+      },
+      {
+        "type": "image",
+        "id": "s6_1_img_lc",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/LC_connectors.jpg/300px-LC_connectors.jpg",
+        "altText": "LC коннектор",
+        "positioning": {
+          "top": "70%",
+          "left": "18%",
+          "width": "10%",
+          "height": "auto"
+        }
+      },
+      {
+        "type": "text",
+        "id": "s6_1_type_st",
+        "content": "ST (Straight Tip): Металлический корпус, байонетное соединение (поворот и фиксация). Ранее популярен в ЛВС, сейчас вытесняется SC и LC.",
+        "positioning": {
+          "top": "60%",
+          "left": "53%",
+          "width": "42%",
+          "height": "auto"
+        },
+        "fontSize": "20px"
+      },
+      {
+        "type": "image",
+        "id": "s6_1_img_st",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/ST_connector.jpg/300px-ST_connector.jpg",
+        "altText": "ST коннектор",
+        "positioning": {
+          "top": "70%",
+          "left": "65%",
+          "width": "10%",
+          "height": "auto"
+        }
+      },
+      {
+        "type": "text",
+        "id": "s6_1_other_types",
+        "content": "Другие типы: MTP/MPO (многоволоконные), E2000, MU, DIN и т.д.",
+        "positioning": {
+          "top": "85%",
+          "left": "5%",
+          "width": "90%"
+        },
+        "fontSize": "18px"
+      }
+    ]
+  },
+  {
+    "id": "slide6_2_connector_chars",
+    "elements": [
+      {
+        "type": "text",
+        "id": "s6_2_title",
+        "content": "Оптические соединители: Характеристики",
+        "positioning": {
+          "top": "5%",
+          "left": "5%",
+          "width": "90%",
+          "textAlign": "center"
+        },
+        "fontSize": "48px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "s6_2_intro",
+        "content": "Качество оптического соединителя определяется его способностью минимизировать потери и отражения сигнала, а также обеспечивать надежное и стабильное соединение.",
+        "positioning": {
+          "top": "15%",
+          "left": "5%",
+          "width": "90%"
+        },
+        "fontSize": "26px"
+      },
+      {
+        "type": "text",
+        "id": "s6_2_insertion_loss",
+        "content": "1. Вносимые потери (Insertion Loss, IL): Потери оптической мощности, вызванные соединителем. Чем меньше, тем лучше. Типичные значения: 0.1 - 0.5 дБ для SMF, 0.2 - 0.75 дБ для MMF. Зависят от точности изготовления, качества полировки, чистоты торцов.",
+        "positioning": {
+          "top": "25%",
+          "left": "5%",
+          "width": "90%",
+          "height": "auto"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "text",
+        "id": "s6_2_return_loss",
+        "content": "2. Обратные потери (Return Loss, RL) / Отражение (Reflectance): Количество света, отраженного обратно к источнику. Чем больше RL (или чем меньше отражение), тем лучше. RL = -10 log (P_reflected / P_incident). Типы полировки торцов феррул влияют на RL:\n    - PC (Physical Contact): RL > 30-40 дБ (типично для MMF)\n    - SPC (Super Physical Contact): RL > 40-50 дБ\n    - UPC (Ultra Physical Contact): RL > 50-55 дБ (типично для SMF)\n    - APC (Angled Physical Contact): RL > 60-70 дБ (торец отполирован под углом 8°, отраженный свет уходит в оболочку). Зеленый цвет корпуса/хвостовика.",
+        "positioning": {
+          "top": "40%",
+          "left": "5%",
+          "width": "90%",
+          "height": "auto"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "image",
+        "id": "s6_2_polishing_types",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Fiber_optic_connector_polish_types.svg/500px-Fiber_optic_connector_polish_types.svg.png",
+        "altText": "Типы полировки торцов коннекторов",
+        "caption": "PC, UPC, APC полировка",
+        "positioning": {
+          "top": "65%",
+          "right": "5%",
+          "width": "30%",
+          "height": "auto"
+        }
+      },
+      {
+        "type": "text",
+        "id": "s6_2_repeatability",
+        "content": "3. Повторяемость (Repeatability): Изменение вносимых потерь при многократных подключениях/отключениях. Обычно < 0.1 - 0.2 дБ.",
+        "positioning": {
+          "top": "65%",
+          "left": "5%",
+          "width": "60%",
+          "height": "auto"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "text",
+        "id": "s6_2_durability",
+        "content": "4. Долговечность (Durability): Количество циклов подключения/отключения без существенного ухудшения характеристик (обычно 500-1000).",
+        "positioning": {
+          "top": "75%",
+          "left": "5%",
+          "width": "60%",
+          "height": "auto"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "text",
+        "id": "s6_2_temp_range",
+        "content": "5. Рабочий диапазон температур.",
+        "positioning": {
+          "top": "85%",
+          "left": "5%",
+          "width": "60%",
+          "height": "auto"
+        },
+        "fontSize": "22px"
+      }
+    ]
+  },
+  {
+    "id": "slide7_1_splitter_types",
+    "elements": [
+      {
+        "type": "text",
+        "id": "s7_1_title",
+        "content": "Оптические разветвители (сплиттеры): Типы",
+        "positioning": {
+          "top": "5%",
+          "left": "5%",
+          "width": "90%",
+          "textAlign": "center"
+        },
+        "fontSize": "48px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "s7_1_intro",
+        "content": "Оптический разветвитель (сплиттер или coupler) – пассивное устройство, которое делит мощность входного оптического сигнала между несколькими выходными портами или объединяет сигналы с нескольких входов в один выход. Часто используются в сетях PON (Passive Optical Network).",
+        "positioning": {
+          "top": "15%",
+          "left": "5%",
+          "width": "90%"
+        },
+        "fontSize": "26px"
+      },
+      {
+        "type": "text",
+        "id": "s7_1_types_header",
+        "content": "Технологии изготовления и типы:",
+        "positioning": {
+          "top": "28%",
+          "left": "5%",
+          "width": "90%"
+        },
+        "fontSize": "24px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "s7_1_type_fbt",
+        "content": "1. Сварные (FBT - Fused Biconical Taper): Изготавливаются путем сплавления и вытягивания двух или более оптических волокон. Позволяют создавать разветвители с различным коэффициентом деления (например, 50/50, 30/70, 10/90).\n   - Преимущества: низкая стоимость для малого числа портов, возможность неравномерного деления мощности, работа в нескольких окнах прозрачности.\n   - Недостатки: более высокие потери и неравномерность для большого числа портов, чувствительность к поляризации и температуре (для некоторых).",
+        "positioning": {
+          "top": "35%",
+          "left": "5%",
+          "width": "45%",
+          "height": "auto"
+        },
+        "fontSize": "20px"
+      },
+      {
+        "type": "image",
+        "id": "s7_1_img_fbt",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Fused_Biconical_Taper_Coupler.svg/400px-Fused_Biconical_Taper_Coupler.svg.png",
+        "altText": "FBT разветвитель",
+        "caption": "Схема FBT разветвителя 2x2",
+        "positioning": {
+          "top": "60%",
+          "left": "10%",
+          "width": "30%",
+          "height": "auto"
+        }
+      },
+      {
+        "type": "text",
+        "id": "s7_1_type_plc",
+        "content": "2. Планарные (PLC - Planar Lightwave Circuit): Изготавливаются методами фотолитографии на кварцевой подложке (аналогично производству микросхем). Создают волноводную структуру, делящую сигнал.\n   - Преимущества: высокая равномерность деления, низкие вносимые потери, малые габариты, стабильность характеристик, возможность изготовления разветвителей с большим числом портов (1xN, 2xN, где N до 64 и более).\n   - Недостатки: более высокая стоимость при малом N, фиксированный коэффициент деления (обычно равномерный).",
+        "positioning": {
+          "top": "35%",
+          "left": "52%",
+          "width": "43%",
+          "height": "auto"
+        },
+        "fontSize": "20px"
+      },
+      {
+        "type": "image",
+        "id": "s7_1_img_plc",
+        "url": "https://www.qintex.sg/wp-content/uploads/2021/03/PLC-Splitter-Working-Principle.jpg",
+        "altText": "PLC разветвитель",
+        "caption": "Принцип работы PLC разветвителя",
+        "positioning": {
+          "top": "60%",
+          "left": "60%",
+          "width": "30%",
+          "height": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "slide7_2_splitter_chars",
+    "elements": [
+      {
+        "type": "text",
+        "id": "s7_2_title",
+        "content": "Оптические разветвители: Характеристики",
+        "positioning": {
+          "top": "5%",
+          "left": "5%",
+          "width": "90%",
+          "textAlign": "center"
+        },
+        "fontSize": "48px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "s7_2_intro",
+        "content": "Характеристики разветвителей определяют их пригодность для конкретных приложений и влияют на общие потери в оптической линии.",
+        "positioning": {
+          "top": "15%",
+          "left": "5%",
+          "width": "90%"
+        },
+        "fontSize": "26px"
+      },
+      {
+        "type": "text",
+        "id": "s7_2_ports",
+        "content": "1. Количество входных/выходных портов: Например, 1x2, 1x4, 1x8, 1x16, 1x32, 1x64, 2x2, 2xN.",
+        "positioning": {
+          "top": "25%",
+          "left": "5%",
+          "width": "90%"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "text",
+        "id": "s7_2_coupling_ratio",
+        "content": "2. Коэффициент деления (Coupling Ratio / Splitting Ratio): Процентное соотношение мощности на выходных портах. Для равномерных разветвителей 1xN, мощность на каждом выходе ~1/N (без учета потерь).",
+        "positioning": {
+          "top": "33%",
+          "left": "5%",
+          "width": "90%"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "text",
+        "id": "s7_2_insertion_loss",
+        "content": "3. Вносимые потери (Insertion Loss): Потери мощности при прохождении сигнала через разветвитель. Складываются из теоретических потерь деления (10log(N) для 1xN) и дополнительных потерь (Excess Loss). Например, для 1x2 сплиттера теоретические потери ~3 дБ, реальные ~3.3-3.8 дБ.",
+        "positioning": {
+          "top": "41%",
+          "left": "5%",
+          "width": "90%"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "text",
+        "id": "s7_2_uniformity",
+        "content": "4. Равномерность (Uniformity): Максимальная разница вносимых потерь между любыми двумя выходными портами для одного входа. Важно для PLC сплиттеров.",
+        "positioning": {
+          "top": "53%",
+          "left": "5%",
+          "width": "90%"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "text",
+        "id": "s7_2_directivity",
+        "content": "5. Направленность (Directivity): Отношение мощности на входном порту к мощности, попавшей на другой входной порт (для 2xN) или на входной порт из выходного (изоляция).",
+        "positioning": {
+          "top": "61%",
+          "left": "5%",
+          "width": "90%"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "text",
+        "id": "s7_2_pdl",
+        "content": "6. Поляризационно-зависимые потери (PDL - Polarization Dependent Loss): Изменение вносимых потерь в зависимости от состояния поляризации входного сигнала.",
+        "positioning": {
+          "top": "69%",
+          "left": "5%",
+          "width": "90%"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "text",
+        "id": "s7_2_wavelength",
+        "content": "7. Рабочий диапазон длин волн: Например, 1260-1360 нм, 1480-1580 нм, или широкополосные (1260-1650 нм).",
+        "positioning": {
+          "top": "77%",
+          "left": "5%",
+          "width": "90%"
+        },
+        "fontSize": "22px"
+      }
+    ]
+  },
+  {
+    "id": "slide8_constructives",
+    "elements": [
+      {
+        "type": "text",
+        "id": "s8_title",
+        "content": "Конструктивы ВОСП: Кроссы и Муфты",
+        "positioning": {
+          "top": "5%",
+          "left": "5%",
+          "width": "90%",
+          "textAlign": "center"
+        },
+        "fontSize": "48px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "s8_important_note",
+        "content": "ВАЖНО: Оптические кроссы и муфты сами по себе НЕ являются оптическими компонентами в смысле преобразования или обработки сигнала. Это элементы кабельной инфраструктуры, обеспечивающие организацию, защиту и коммутацию оптических волокон и пассивных компонентов.",
+        "positioning": {
+          "top": "15%",
+          "left": "5%",
+          "width": "90%",
+          "backgroundColor": "#fff3cd",
+          "padding": "10px",
+          "border": "1px solid #ffeeba"
+        },
+        "fontSize": "24px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "s8_crosses_intro",
+        "content": "Оптические кроссы (ODF - Optical Distribution Frame): Пассивные устройства для коммутации оптических кабелей. Предназначены для оконечивания линейных и станционных кабелей, подключения активного оборудования через патч-корды.\n- Функции: организация волокон, установка адаптеров, хранение запаса патч-кордов.\n- Типы: стоечные (19\", 23\"), настенные, малогабаритные.",
+        "positioning": {
+          "top": "30%",
+          "left": "5%",
+          "width": "45%",
+          "height": "auto"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "image",
+        "id": "s8_img_odf",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Optical_Distribution_Frame_%28ODF%29.jpg/400px-Optical_Distribution_Frame_%28ODF%29.jpg",
+        "altText": "Оптический кросс (ODF)",
+        "caption": "Стоечный оптический кросс (ODF)",
+        "positioning": {
+          "top": "50%",
+          "left": "10%",
+          "width": "30%",
+          "height": "auto"
+        }
+      },
+      {
+        "type": "text",
+        "id": "s8_closures_intro",
+        "content": "Оптические муфты (Splice Closures): Устройства для защиты мест сварки или механического соединения оптических волокон кабелей. Обеспечивают герметичность и механическую прочность соединения, организацию волокон внутри.\n- Функции: защита сварных/механических соединений, герметизация, фиксация кабеля, организация транзитных модулей.\n- Типы: проходные, тупиковые, универсальные; для установки в грунте, на опорах, в канализации.",
+        "positioning": {
+          "top": "30%",
+          "left": "52%",
+          "width": "43%",
+          "height": "auto"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "image",
+        "id": "s8_img_closure",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Optical_fiber_splice_closure_FOSC_400_A4.jpg/400px-Optical_fiber_splice_closure_FOSC_400_A4.jpg",
+        "altText": "Оптическая муфта",
+        "caption": "Оптическая муфта для защиты сварных соединений",
+        "positioning": {
+          "top": "50%",
+          "left": "60%",
+          "width": "30%",
+          "height": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "slide9_passive_applications",
+    "elements": [
+      {
+        "type": "text",
+        "id": "s9_title",
+        "content": "Применение пассивных компонентов ВОСП",
+        "positioning": {
+          "top": "5%",
+          "left": "5%",
+          "width": "90%",
+          "textAlign": "center"
+        },
+        "fontSize": "48px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "s9_intro",
+        "content": "Пассивные компоненты являются неотъемлемой частью практически всех волоконно-оптических систем:",
+        "positioning": {
+          "top": "15%",
+          "left": "5%",
+          "width": "90%"
+        },
+        "fontSize": "26px"
+      },
+      {
+        "type": "text",
+        "id": "s9_telecom",
+        "content": "Магистральные и зоновые сети связи: Оптические волокна (G.652, G.655) для передачи на большие расстояния, коннекторы (LC, SC), WDM-фильтры, аттенюаторы.",
+        "positioning": {
+          "top": "25%",
+          "left": "5%",
+          "width": "90%"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "text",
+        "id": "s9_pon",
+        "content": "Сети абонентского доступа (FTTH/PON): Оптические волокна (G.652, G.657), сплиттеры (PLC 1xN), коннекторы (SC/APC, LC/APC), абонентские розетки.",
+        "positioning": {
+          "top": "35%",
+          "left": "5%",
+          "width": "90%"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "text",
+        "id": "s9_lan_dc",
+        "content": "Локальные вычислительные сети (ЛВС) и Центры обработки данных (ЦОД): Многомодовые (OM3, OM4, OM5) и одномодовые волокна, коннекторы высокой плотности (LC, MTP/MPO), патч-панели (кроссы).",
+        "positioning": {
+          "top": "45%",
+          "left": "5%",
+          "width": "90%"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "text",
+        "id": "s9_catv",
+        "content": "Сети кабельного телевидения (CATV): Оптические волокна, сплиттеры, аттенюаторы, WDM для совместной передачи ТВ и данных.",
+        "positioning": {
+          "top": "55%",
+          "left": "5%",
+          "width": "90%"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "text",
+        "id": "s9_sensors",
+        "content": "Волоконно-оптические датчики: Специальные волокна, FBG-решетки (пассивный компонент), соединители. Используются для измерения температуры, деформации, давления.",
+        "positioning": {
+          "top": "65%",
+          "left": "5%",
+          "width": "90%"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "text",
+        "id": "s9_industrial",
+        "content": "Промышленные системы и автоматизация: В условиях сильных ЭМП, где важна помехозащищенность.",
+        "positioning": {
+          "top": "75%",
+          "left": "5%",
+          "width": "90%"
+        },
+        "fontSize": "22px"
+      }
+    ]
+  },
+  {
+    "id": "slide10_conclusions",
+    "elements": [
+      {
+        "type": "text",
+        "id": "s10_title",
+        "content": "Выводы по пассивным компонентам ВОСП",
+        "positioning": {
+          "top": "5%",
+          "left": "5%",
+          "width": "90%",
+          "textAlign": "center"
+        },
+        "fontSize": "48px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "s10_point1",
+        "content": "1. Пассивные компоненты являются фундаментом любой волоконно-оптической линии связи, обеспечивая передачу, соединение и распределение оптических сигналов без их активного преобразования.",
+        "positioning": {
+          "top": "20%",
+          "left": "5%",
+          "width": "90%"
+        },
+        "fontSize": "26px"
+      },
+      {
+        "type": "text",
+        "id": "s10_point2",
+        "content": "2. Оптическое волокно – ключевой пассивный компонент, его тип (SMF/MMF) и параметры (затухание, дисперсия) определяют дальность и скорость передачи.",
+        "positioning": {
+          "top": "32%",
+          "left": "5%",
+          "width": "90%"
+        },
+        "fontSize": "26px"
+      },
+      {
+        "type": "text",
+        "id": "s10_point3",
+        "content": "3. Оптические соединители и разветвители обеспечивают гибкость и масштабируемость сетей, но их характеристики (вносимые потери, отражения) должны тщательно учитываться при проектировании.",
+        "positioning": {
+          "top": "44%",
+          "left": "5%",
+          "width": "90%"
+        },
+        "fontSize": "26px"
+      },
+      {
+        "type": "text",
+        "id": "s10_point4",
+        "content": "4. Правильный выбор и качественный монтаж пассивных компонентов критически важны для надежности и производительности ВОСП.",
+        "positioning": {
+          "top": "56%",
+          "left": "5%",
+          "width": "90%"
+        },
+        "fontSize": "26px"
+      },
+      {
+        "type": "text",
+        "id": "s10_point5",
+        "content": "5. Понимание принципов работы и характеристик пассивных компонентов необходимо для проектирования, строительства и эксплуатации современных телекоммуникационных систем.",
+        "positioning": {
+          "top": "68%",
+          "left": "5%",
+          "width": "90%"
+        },
+        "fontSize": "26px"
+      }
+    ]
+  }
+]

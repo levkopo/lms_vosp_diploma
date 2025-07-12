@@ -1,0 +1,37 @@
+{
+  "name": "practice-vosp",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev-host": "vite --host",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri"
+  },
+  "dependencies": {
+    "@tanstack/react-query": "^5.74.9",
+    "@tauri-apps/api": "^2",
+    "@tauri-apps/plugin-opener": "^2",
+    "@tauri-apps/plugin-process": "^2.2.1",
+    "@znui/buttons": "^2.0.0-beta.5",
+    "@znui/md3-themes": "^2.0.0-beta.2",
+    "@znui/react": "^2.0.0-beta.3",
+    "@znui/slider": "^2.0.0-beta.1",
+    "@znui/text-fields": "^2.0.0-beta.2",
+    "formik": "^2.4.6",
+    "mathjs": "^14.4.0",
+    "preact": "^10.25.1",
+    "react-icons": "^5.5.0",
+    "react-router": "^7.5.2",
+    "react-router-dom": "^7.5.2",
+    "recharts": "^2.15.3"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.9.3",
+    "@tauri-apps/cli": "^2",
+    "typescript": "~5.6.2",
+    "vite": "6.3.4"
+  }
+}

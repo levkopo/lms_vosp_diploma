@@ -1,0 +1,566 @@
+[
+  {
+    "id": "5-1",
+    "elements": [
+      {
+        "type": "text",
+        "id": "5-1-title",
+        "content": "Введение в оптические приемники",
+        "fontSize": "48px",
+        "fontWidth": "bold",
+        "positioning": {
+          "top": "5%",
+          "left": "5%"
+        }
+      },
+      {
+        "type": "text",
+        "id": "5-1-text1",
+        "content": "Назначение и роль оптических приемников в ВОСП: Оптические приемники (ОП) являются ключевыми элементами волоконно-оптических систем передачи (ВОСП), предназначенными для преобразования ослабленного и искаженного оптического сигнала, прошедшего по оптическому волокну, обратно в электрический сигнал.",
+        "fontSize": "28px",
+        "positioning": {
+          "top": "20%",
+          "left": "5%",
+          "width": "90%"
+        }
+      },
+      {
+        "type": "text",
+        "id": "5-1-text2",
+        "content": "Общая структура оптического приемника: \n1. Фотодетектор: преобразует оптическую мощность в электрический ток.\n2. Усилитель: усиливает слабый электрический сигнал от фотодетектора.\n3. Схема обработки сигнала: восстанавливает исходную форму цифрового сигнала, выполняет фильтрацию и демодуляцию.",
+        "fontSize": "28px",
+        "positioning": {
+          "top": "40%",
+          "left": "5%",
+          "width": "90%"
+        }
+      }
+    ]
+  },
+  {
+    "id": "5-2",
+    "elements": [
+      {
+        "type": "text",
+        "id": "5-2-title",
+        "content": "Фотодиоды: общие сведения",
+        "fontSize": "48px",
+        "fontWidth": "bold",
+        "positioning": {
+          "top": "5%",
+          "left": "5%"
+        }
+      },
+      {
+        "type": "text",
+        "id": "5-2-text1",
+        "content": "Принцип работы фотодиода: Фотодиод — это полупроводниковый прибор, преобразующий падающий на него свет в электрический ток. При поглощении фотонов в обедненной области p-n перехода генерируются электронно-дырочные пары. Под действием электрического поля эти носители заряда разделяются, создавая фототок.",
+        "fontSize": "28px",
+        "positioning": {
+          "top": "20%",
+          "left": "5%",
+          "width": "90%"
+        }
+      },
+      {
+        "type": "text",
+        "id": "5-2-text2",
+        "content": "Фототок и обратный ток: \nФототок — это ток, возникающий в фотодиоде под действием света. Он пропорционален интенсивности падающего излучения.\nОбратный ток (темновой ток) — это небольшой ток, протекающий через фотодиод в отсутствие света. Он является паразитным и определяет порог чувствительности фотодиода.",
+        "fontSize": "28px",
+        "positioning": {
+          "top": "45%",
+          "left": "5%",
+          "width": "90%"
+        }
+      },
+      {
+        "type": "text",
+        "id": "5-2-text3",
+        "content": "Типы фотодиодов: Основные типы фотодиодов, используемые в ВОСП: p-n фотодиоды, PIN-фотодиоды, лавинные фотодиоды (APD).",
+        "fontSize": "28px",
+        "positioning": {
+          "top": "70%",
+          "left": "5%",
+          "width": "90%"
+        }
+      }
+    ]
+  },
+  {
+    "id": "5-3",
+    "elements": [
+      {
+        "type": "text",
+        "id": "5-3-title",
+        "content": "PIN-фотодиоды",
+        "fontSize": "48px",
+        "fontWidth": "bold",
+        "positioning": {
+          "top": "5%",
+          "left": "5%"
+        }
+      },
+      {
+        "type": "text",
+        "id": "5-3-text1",
+        "content": "Устройство и принцип работы PIN-фотодиода: PIN-фотодиод состоит из сильно легированных p- и n-областей, разделенных широкой слаболегированной или собственной (intrinsic, I) i-областью. Поглощение света происходит в основном в i-области, где создается сильное электрическое поле. Это обеспечивает эффективный сбор генерируемых носителей заряда и высокое быстродействие.",
+        "fontSize": "28px",
+        "positioning": {
+          "top": "20%",
+          "left": "5%",
+          "width": "90%"
+        }
+      },
+      {
+        "type": "text",
+        "id": "5-3-text2",
+        "content": "Вольтамперная характеристика (ВАХ): ВАХ PIN-фотодиода схожа с ВАХ обычного диода, но при обратном смещении фототок добавляется к темновому току. В рабочем режиме PIN-фотодиоды используются при обратном смещении.",
+        "fontSize": "28px",
+        "positioning": {
+          "top": "45%",
+          "left": "5%",
+          "width": "45%"
+        }
+      },
+      {
+        "type": "image",
+        "id": "5-3-image1",
+        "url": "data:image/png;base64,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",
+        "altText": "Вольтамперная характеристика PIN-фотодиода",
+        "caption": "Пример ВАХ PIN-фотодиода",
+        "positioning": {
+          "top": "45%",
+          "left": "50%",
+          "width": "50%",
+          "height": "50%"
+        }
+      },
+      {
+        "type": "text",
+        "id": "5-3-text3",
+        "content": "Преимущества: высокое быстродействие, низкий темновой ток, хорошая чувствительность, линейность.\nНедостатки: отсутствие внутреннего усиления (требуется внешний малошумящий усилитель).",
+        "fontSize": "28px",
+        "positioning": {
+          "top": "70%",
+          "left": "5%",
+          "width": "45%"
+        }
+      }
+    ]
+  },
+  {
+    "id": "5-4",
+    "elements": [
+      {
+        "type": "text",
+        "id": "5-4-title",
+        "content": "Характеристики PIN-фотодиодов",
+        "fontSize": "48px",
+        "fontWidth": "bold",
+        "positioning": {
+          "top": "5%",
+          "left": "5%"
+        }
+      },
+      {
+        "type": "text",
+        "id": "5-4-text1",
+        "content": "Чувствительность (S): Отношение фототока (I_ph) к падающей оптической мощности (P_in). S = I_ph / P_in. Измеряется в А/Вт. Зависит от длины волны.",
+        "fontSize": "24px",
+        "positioning": {
+          "top": "20%",
+          "left": "5%",
+          "width": "90%"
+        }
+      },
+      {
+        "type": "text",
+        "id": "5-4-text2",
+        "content": "Квантовая эффективность (η): Отношение числа генерированных электронно-дырочных пар к числу падающих фотонов. η = (I_ph / q) / (P_in / hν), где q - заряд электрона, h - постоянная Планка, ν - частота света. Безразмерная величина, часто выражается в процентах.",
+        "fontSize": "24px",
+        "positioning": {
+          "top": "35%",
+          "left": "5%",
+          "width": "90%"
+        }
+      },
+      {
+        "type": "text",
+        "id": "5-4-text3",
+        "content": "Темновые токи (I_d): Ток, протекающий через фотодиод в отсутствие освещения. Является источником шума. Зависит от температуры и обратного напряжения.",
+        "fontSize": "24px",
+        "positioning": {
+          "top": "50%",
+          "left": "5%",
+          "width": "90%"
+        }
+      },
+      {
+        "type": "text",
+        "id": "5-4-text4",
+        "content": "Полоса пропускания (BW) или время нарастания/спада: Определяет максимальную скорость передачи данных. Ограничивается временем пролета носителей через i-область и RC-постоянной схемы.",
+        "fontSize": "24px",
+        "positioning": {
+          "top": "65%",
+          "left": "5%",
+          "width": "90%"
+        }
+      },
+      {
+        "type": "text",
+        "id": "5-4-text5",
+        "content": "Факторы, влияющие на характеристики: материал полупроводника (Si, Ge, InGaAs), толщина i-области, площадь фоточувствительной площадки, рабочая температура, приложенное обратное напряжение.",
+        "fontSize": "24px",
+        "positioning": {
+          "top": "80%",
+          "left": "5%",
+          "width": "90%"
+        }
+      }
+    ]
+  },
+  {
+    "id": "5-5",
+    "elements": [
+      {
+        "type": "text",
+        "id": "5-5-title",
+        "content": "Лавинные фотодиоды (APD)",
+        "fontSize": "48px",
+        "fontWidth": "bold",
+        "positioning": {
+          "top": "5%",
+          "left": "5%"
+        }
+      },
+      {
+        "type": "text",
+        "id": "5-5-text1",
+        "content": "Устройство и принцип работы APD: Лавинный фотодиод (Avalanche Photodiode) имеет структуру, схожую с PIN-фотодиодом, но работает при значительно более высоком обратном напряжении, близком к напряжению пробоя. Это создает в обедненной области сильное электрическое поле, достаточное для того, чтобы носители заряда, генерируемые светом, приобретали энергию, достаточную для ионизации атомов кристаллической решетки. Этот процесс, называемый ударной ионизацией, приводит к генерации вторичных электронно-дырочных пар, которые в свою очередь также могут вызывать ионизацию. Возникает лавинный эффект, приводящий к внутреннему усилению фототока.",
+        "fontSize": "28px",
+        "positioning": {
+          "top": "20%",
+          "left": "5%",
+          "width": "90%"
+        }
+      },
+      {
+        "type": "text",
+        "id": "5-5-text2",
+        "content": "Коэффициент лавинного умножения (M): Показывает, во сколько раз фототок, генерируемый в APD, превышает первичный фототок (ток, который был бы без лавинного умножения). M = I_out / I_primary. Коэффициент M сильно зависит от приложенного обратного напряжения и температуры. Типичные значения M лежат в диапазоне от десятков до сотен.",
+        "fontSize": "28px",
+        "positioning": {
+          "top": "55%",
+          "left": "5%",
+          "width": "90%"
+        }
+      },
+      {
+        "type": "text",
+        "id": "5-5-text3",
+        "content": "Преимущества APD: высокая чувствительность благодаря внутреннему усилению, что позволяет обнаруживать очень слабые оптические сигналы.\nНедостатки: более высокий уровень шума (шум умножения), необходимость в высоком и стабильном напряжении смещения, сильная температурная зависимость коэффициента умножения.",
+        "fontSize": "28px",
+        "positioning": {
+          "top": "75%",
+          "left": "5%",
+          "width": "90%"
+        }
+      }
+    ]
+  },
+  {
+    "id": "5-6",
+    "elements": [
+      {
+        "type": "text",
+        "id": "5-6-title",
+        "content": "Характеристики APD",
+        "fontSize": "48px",
+        "fontWidth": "bold",
+        "positioning": {
+          "top": "5%",
+          "left": "5%"
+        }
+      },
+      {
+        "type": "text",
+        "id": "5-6-text1",
+        "content": "Чувствительность (S_APD): Аналогична чувствительности PIN-диода, но умножается на коэффициент лавинного умножения M. S_APD = M * S_primary = M * (η * q) / (h * ν). Это позволяет APD обнаруживать более слабые сигналы.",
+        "fontSize": "24px",
+        "positioning": {
+          "top": "20%",
+          "left": "5%",
+          "width": "90%"
+        }
+      },
+      {
+        "type": "text",
+        "id": "5-6-text2",
+        "content": "Квантовая эффективность (η): Определяется так же, как и для PIN-диодов, но эффективный выходной ток увеличивается за счет лавинного умножения.",
+        "fontSize": "24px",
+        "positioning": {
+          "top": "35%",
+          "left": "5%",
+          "width": "90%"
+        }
+      },
+      {
+        "type": "text",
+        "id": "5-6-text3",
+        "content": "Шум: Основной недостаток APD – повышенный уровень шума. Кроме теплового и дробового шумов, присущих PIN-диодам, в APD добавляется шум умножения. Этот шум связан со стохастической природой лавинного процесса и характеризуется фактором избыточного шума F(M), который растет с увеличением M.",
+        "fontSize": "24px",
+        "positioning": {
+          "top": "50%",
+          "left": "5%",
+          "width": "90%"
+        }
+      },
+      {
+        "type": "text",
+        "id": "5-6-text4",
+        "content": "Полоса пропускания: Может быть ограничена временем нарастания лавины в дополнение к RC-постоянной и времени пролета носителей. Произведение коэффициента усиления на полосу пропускания (Gain-Bandwidth Product, GBP) является важной характеристикой.",
+        "fontSize": "24px",
+        "positioning": {
+          "top": "65%",
+          "left": "5%",
+          "width": "90%"
+        }
+      },
+      {
+        "type": "text",
+        "id": "5-6-text5",
+        "content": "Факторы, влияющие на характеристики: Приложенное обратное напряжение (сильно влияет на M и шум), температура (влияет на M и темновые токи), материал полупроводника, конструкция диода.",
+        "fontSize": "24px",
+        "positioning": {
+          "top": "80%",
+          "left": "5%",
+          "width": "90%"
+        }
+      }
+    ]
+  },
+  {
+    "id": "5-7",
+    "elements": [
+      {
+        "type": "text",
+        "id": "5-7-title",
+        "content": "Сравнение PIN и APD",
+        "fontSize": "48px",
+        "fontWidth": "bold",
+        "positioning": {
+          "top": "5%",
+          "left": "5%"
+        }
+      },
+      {
+        "type": "text",
+        "id": "5-7-pin-header",
+        "content": "PIN-фотодиоды:",
+        "fontSize": "32px",
+        "fontWidth": "bold",
+        "positioning": {
+          "top": "18%",
+          "left": "5%"
+        }
+      },
+      {
+        "type": "text",
+        "id": "5-7-pin-pros",
+        "content": "Преимущества: низкий уровень шума, простота схемы включения, низкое рабочее напряжение, хорошая температурная стабильность, более низкая стоимость.",
+        "fontSize": "24px",
+        "positioning": {
+          "top": "25%",
+          "left": "7%",
+          "width": "88%"
+        }
+      },
+      {
+        "type": "text",
+        "id": "5-7-pin-cons",
+        "content": "Недостатки: отсутствие внутреннего усиления, что требует использования внешних малошумящих усилителей для слабых сигналов.",
+        "fontSize": "24px",
+        "positioning": {
+          "top": "35%",
+          "left": "7%",
+          "width": "88%"
+        }
+      },
+      {
+        "type": "text",
+        "id": "5-7-pin-apps",
+        "content": "Области применения: короткие и средние линии связи, локальные сети (LAN), сети доступа с высоким уровнем сигнала, измерительное оборудование.",
+        "fontSize": "24px",
+        "positioning": {
+          "top": "45%",
+          "left": "7%",
+          "width": "88%"
+        }
+      },
+      {
+        "type": "text",
+        "id": "5-7-apd-header",
+        "content": "Лавинные фотодиоды (APD):",
+        "fontSize": "32px",
+        "fontWidth": "bold",
+        "positioning": {
+          "top": "55%",
+          "left": "5%"
+        }
+      },
+      {
+        "type": "text",
+        "id": "5-7-apd-pros",
+        "content": "Преимущества: высокое внутреннее усиление, позволяющее регистрировать очень слабые оптические сигналы, высокая чувствительность.",
+        "fontSize": "24px",
+        "positioning": {
+          "top": "62%",
+          "left": "7%",
+          "width": "88%"
+        }
+      },
+      {
+        "type": "text",
+        "id": "5-7-apd-cons",
+        "content": "Недостатки: более высокий уровень шума (шум умножения), необходимость в высоком и точном напряжении смещения, сильная зависимость характеристик от температуры, более высокая стоимость, более сложная схема управления.",
+        "fontSize": "24px",
+        "positioning": {
+          "top": "72%",
+          "left": "7%",
+          "width": "88%"
+        }
+      },
+      {
+        "type": "text",
+        "id": "5-7-apd-apps",
+        "content": "Области применения: магистральные ВОСП большой протяженности, высокоскоростные системы передачи данных, системы, работающие со слабыми сигналами (например, квантовая криптография, лидары).",
+        "fontSize": "24px",
+        "positioning": {
+          "top": "82%",
+          "left": "7%",
+          "width": "88%"
+        }
+      }
+    ]
+  },
+  {
+    "id": "5-8",
+    "elements": [
+      {
+        "type": "text",
+        "id": "5-8-title",
+        "content": "Шум в оптических приемниках",
+        "fontSize": "48px",
+        "fontWidth": "bold",
+        "positioning": {
+          "top": "5%",
+          "left": "5%"
+        }
+      },
+      {
+        "type": "text",
+        "id": "5-8-intro",
+        "content": "Шум — это случайные флуктуации тока или напряжения, которые накладываются на полезный сигнал и ограничивают чувствительность оптического приемника. Чувствительность определяется как минимальная оптическая мощность, необходимая для достижения заданного отношения сигнал/шум (SNR) или вероятности битовой ошибки (BER).",
+        "fontSize": "26px",
+        "positioning": {
+          "top": "18%",
+          "left": "5%",
+          "width": "90%"
+        }
+      },
+      {
+        "type": "text",
+        "id": "5-8-thermal",
+        "content": "1. Тепловой шум (шум Джонсона-Найквиста): Обусловлен хаотическим тепловым движением носителей заряда в проводниках (например, в резисторе нагрузки или во входном сопротивлении усилителя). Среднеквадратичное значение тока теплового шума: <I²_th> = 4kTΔf/R, где k – постоянная Больцмана, T – абсолютная температура, Δf – полоса пропускания, R – сопротивление.",
+        "fontSize": "24px",
+        "positioning": {
+          "top": "33%",
+          "left": "5%",
+          "width": "90%"
+        }
+      },
+      {
+        "type": "text",
+        "id": "5-8-shot",
+        "content": "2. Дробовой шум: Связан с дискретной природой электрического тока, т.е. с тем, что ток представляет собой поток отдельных носителей заряда (фотоэлектронов и дырок). Среднеквадратичное значение тока дробового шума: <I²_sh> = 2q(I_ph + I_d)Δf, где q – заряд электрона, I_ph – фототок, I_d – темновой ток.",
+        "fontSize": "24px",
+        "positioning": {
+          "top": "53%",
+          "left": "5%",
+          "width": "90%"
+        }
+      },
+      {
+        "type": "text",
+        "id": "5-8-multiplication",
+        "content": "3. Шум умножения (в APD): Возникает из-за стохастического характера процесса лавинного умножения. Даже если число первичных фотоэлектронов постоянно, число вторичных носителей флуктуирует. Этот шум увеличивает дробовой шум первичного тока и темнового тока: <I²_APD_sh> = 2q(I_ph + I_d)M²F(M)Δf, где F(M) – фактор избыточного шума, зависящий от M и материала APD (F(M) ≈ M^x, где x = 0.2-1.0).",
+        "fontSize": "24px",
+        "positioning": {
+          "top": "73%",
+          "left": "5%",
+          "width": "90%"
+        }
+      }
+    ]
+  },
+  {
+    "id": "5-10",
+    "elements": [
+      {
+        "type": "text",
+        "id": "5-10-title",
+        "content": "Применение и перспективы оптических приемников",
+        "fontSize": "48px",
+        "fontWidth": "bold",
+        "positioning": {
+          "top": "5%",
+          "left": "5%"
+        }
+      },
+      {
+        "type": "text",
+        "id": "5-10-apps-header",
+        "content": "Применение оптических приемников:",
+        "fontSize": "32px",
+        "fontWidth": "bold",
+        "positioning": {
+          "top": "18%",
+          "left": "5%"
+        }
+      },
+      {
+        "type": "text",
+        "id": "5-10-apps-list",
+        "content": "• Магистральные линии связи: APD для длинных дистанций и высоких скоростей (10 Гбит/с, 40 Гбит/с, 100 Гбит/с и выше).\n• Сети доступа (FTTH, PON): PIN-фотодиоды для абонентских терминалов (ONT/ONU), иногда APD в центральных узлах (OLT).\n• Локальные вычислительные сети (LAN) и сети хранения данных (SAN): PIN-фотодиоды для коротких линков.\n• Центры обработки данных (ЦОД): PIN-фотодиоды (часто в составе трансиверов с VCSEL) для межстоечных и внутристоечных соединений.\n• Оптические измерительные приборы: измерители мощности, рефлектометры (PIN и APD).\n• Системы оптического зондирования (лидары): APD для высокой чувствительности и дальности.\n• Медицинское оборудование, промышленная автоматика.",
+        "fontSize": "22px",
+        "positioning": {
+          "top": "26%",
+          "left": "5%",
+          "width": "90%"
+        }
+      },
+      {
+        "type": "text",
+        "id": "5-10-persp-header",
+        "content": "Перспективы развития:",
+        "fontSize": "32px",
+        "fontWidth": "bold",
+        "positioning": {
+          "top": "60%",
+          "left": "5%"
+        }
+      },
+      {
+        "type": "text",
+        "id": "5-10-persp-list",
+        "content": "• Интеграция: Развитие фотонных интегральных схем (PICs), объединяющих фотодетекторы, усилители и другие компоненты на одном кристалле (кремниевая фотоника).\n• Повышение быстродействия и чувствительности: Разработка приемников для скоростей >400 Гбит/с и 1 Тбит/с на канал.\n• Снижение шумов и энергопотребления: Особенно актуально для ЦОД и мобильных устройств.\n• Новые материалы: Исследование и применение новых полупроводниковых материалов (например, на основе графена, квантовых точек) для улучшения характеристик или работы в новых спектральных диапазонах (например, средний ИК).\n• Когерентные приемники: Для увеличения пропускной способности и дальности передачи, используют сложные схемы демодуляции фазы и поляризации света.\n• Приемники для квантовых коммуникаций: Однофотонные детекторы (SPAD).",
+        "fontSize": "22px",
+        "positioning": {
+          "top": "68%",
+          "left": "5%",
+          "width": "90%"
+        }
+      }
+    ]
+  }
+]

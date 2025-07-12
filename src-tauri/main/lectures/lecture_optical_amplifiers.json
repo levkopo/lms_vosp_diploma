@@ -1,0 +1,1600 @@
+[
+  {
+    "id": "slide001_intro_attenuation",
+    "elements": [
+      {
+        "type": "text",
+        "id": "s1_title",
+        "content": "Введение в оптические усилители",
+        "positioning": {
+          "top": "5%",
+          "left": "5%",
+          "width": "90%"
+        },
+        "fontSize": "44px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "s1_text1",
+        "content": "Оптические усилители - ключевые компоненты современных волоконно-оптических систем передачи (ВОСП), позволяющие передавать информацию на сверхбольшие расстояния.",
+        "positioning": {
+          "top": "15%",
+          "left": "5%",
+          "width": "90%"
+        },
+        "fontSize": "28px"
+      },
+      {
+        "type": "text",
+        "id": "s1_text2",
+        "content": "<strong>Проблема:</strong> Затухание оптического сигнала в волокне ограничивает дальность передачи без регенерации или усиления. Мощность сигнала экспоненциально уменьшается с расстоянием.",
+        "positioning": {
+          "top": "22%",
+          "left": "5%",
+          "width": "55%"
+        },
+        "fontSize": "28px"
+      },
+      {
+        "type": "image",
+        "id": "s1_img_attenuation_concept",
+        "url": "https://via.placeholder.com/600x350.png?text=Затухание+сигнала+в+волокне",
+        "altText": "Концептуальное изображение затухания сигнала",
+        "positioning": {
+          "top": "32%",
+          "left": "5%",
+          "width": "55%",
+          "height": "auto"
+        }
+      },
+      {
+        "type": "text",
+        "id": "s1_graph_intro",
+        "content": "Интерактивная модель затухания:",
+        "positioning": {
+          "top": "32%",
+          "left": "65%",
+          "width": "30%"
+        },
+        "fontSize": "26px"
+      },
+      {
+        "type": "slider",
+        "id": "alpha_slider_s1",
+        "label": "Коэффициент затухания α (дБ/км):",
+        "inputType": "slider",
+        "defaultValue": 0.2,
+        "min": 0.15,
+        "max": 0.5,
+        "step": 0.01,
+        "positioning": {
+          "top": "38%",
+          "left": "65%",
+          "width": "30%"
+        }
+      },
+      {
+        "type": "linearGraph",
+        "id": "attenuation_graph_s1",
+        "caption": "Зависимость относительной мощности P(L)/P(0) от расстояния L",
+        "xAxisLabel": "Расстояние L (км)",
+        "yAxisLabel": "P(L)/P(0)",
+        "domain": {
+          "min": 0,
+          "max": 200
+        },
+        "range": {
+          "min": 0,
+          "max": 1
+        },
+        "formulaParameters": {
+          "formula": "pow(10, -(alpha_var * x / 10))",
+          "variables": [
+            {
+              "name": "alpha_var",
+              "inputId": "alpha_slider_s1"
+            }
+          ]
+        },
+        "positioning": {
+          "top": "48%",
+          "left": "65%",
+          "width": "33%",
+          "height": "48%"
+        }
+      }
+    ]
+  },
+  {
+    "id": "slide002_principle",
+    "elements": [
+      {
+        "type": "text",
+        "id": "s2_title",
+        "content": "Принцип работы оптического усилителя",
+        "positioning": {
+          "top": "5%",
+          "left": "5%",
+          "width": "90%"
+        },
+        "fontSize": "44px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "s2_text_core",
+        "content": "Усиление света основано на явлении <strong>стимулированного (вынужденного) излучения</strong>, предсказанного А. Эйнштейном.",
+        "positioning": {
+          "top": "15%",
+          "left": "5%",
+          "width": "90%"
+        },
+        "fontSize": "28px"
+      },
+      {
+        "type": "text",
+        "id": "s2_text_steps_intro",
+        "content": "Ключевые процессы в активной среде усилителя:",
+        "positioning": {
+          "top": "23%",
+          "left": "5%",
+          "width": "55%"
+        },
+        "fontSize": "28px"
+      },
+      {
+        "type": "text",
+        "id": "s2_step1",
+        "content": "<strong>1. Накачка (Pumping):</strong> Атомы (или ионы) активной среды поглощают энергию от внешнего источника (лазера накачки), переходя на более высокий энергетический уровень (E<sub>2</sub>).",
+        "positioning": {
+          "top": "30%",
+          "left": "5%",
+          "width": "55%"
+        },
+        "fontSize": "26px"
+      },
+      {
+        "type": "text",
+        "id": "s2_step2",
+        "content": "<strong>2. Инверсия населенности (Population Inversion):</strong> Создается состояние, при котором число атомов на возбужденном уровне (N<sub>2</sub>) превышает число атомов на нижележащем рабочем уровне (N<sub>1</sub>). Это необходимое условие для усиления.",
+        "positioning": {
+          "top": "42%",
+          "left": "5%",
+          "width": "55%"
+        },
+        "fontSize": "26px"
+      },
+      {
+        "type": "text",
+        "id": "s2_step3",
+        "content": "<strong>3. Стимулированное излучение:</strong> Фотон входного сигнала с энергией hν = E<sub>2</sub> - E<sub>1</sub>, проходя через активную среду, взаимодействует с возбужденным атомом. Это стимулирует переход атома с уровня E<sub>2</sub> на E<sub>1</sub> с испусканием второго фотона, который является точной копией первого (та же энергия, фаза, поляризация, направление). Таким образом, сигнал усиливается.",
+        "positioning": {
+          "top": "54%",
+          "left": "5%",
+          "width": "55%"
+        },
+        "fontSize": "26px"
+      },
+      {
+        "type": "image",
+        "id": "s2_img_levels",
+        "url": "https://via.placeholder.com/700x500.png?text=Энергетические+уровни+и+излучение",
+        "altText": "Диаграмма энергетических уровней, иллюстрирующая поглощение, спонтанное и стимулированное излучение",
+        "caption": "Процессы поглощения, спонтанного и стимулированного излучения.",
+        "positioning": {
+          "top": "25%",
+          "left": "63%",
+          "width": "35%",
+          "height": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "slide003_types",
+    "elements": [
+      {
+        "type": "text",
+        "id": "s3_title",
+        "content": "Основные типы оптических усилителей",
+        "positioning": {
+          "top": "5%",
+          "left": "5%",
+          "width": "90%"
+        },
+        "fontSize": "44px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "s3_intro",
+        "content": "Существует несколько основных технологий оптического усиления, различающихся активной средой, механизмом накачки и рабочим диапазоном длин волн:",
+        "positioning": {
+          "top": "15%",
+          "left": "5%",
+          "width": "90%"
+        },
+        "fontSize": "28px"
+      },
+      {
+        "type": "text",
+        "id": "s3_edfa",
+        "content": "<strong>1. EDFA (Erbium-Doped Fiber Amplifier) — Эрбиевый волоконный усилитель:</strong><br>Активная среда — оптическое волокно, легированное ионами эрбия (Er<sup>3+</sup>).<br>Наиболее распространены для усиления в C-диапазоне (1530–1565 нм) и L-диапазоне (1565–1625 нм).<br>Характеристики: высокий коэффициент усиления, низкий уровень шума, хорошая совместимость с волоконными линиями.",
+        "positioning": {
+          "top": "25%",
+          "left": "5%",
+          "width": "90%"
+        },
+        "fontSize": "26px"
+      },
+      {
+        "type": "text",
+        "id": "s3_soa",
+        "content": "<strong>2. SOA (Semiconductor Optical Amplifier) — Полупроводниковый оптический усилитель:</strong><br>Активная среда — полупроводниковый волновод (аналогичен структуре лазерного диода, но без резонатора).<br>Преимущества: компактность, возможность интеграции, работа в широком диапазоне длин волн (например, O, E, S, C, L диапазоны).<br>Недостатки: более высокий уровень шума и нелинейных искажений по сравнению с EDFA, чувствительность к поляризации (хотя есть и поляризационно-независимые модели).",
+        "positioning": {
+          "top": "45%",
+          "left": "5%",
+          "width": "90%"
+        },
+        "fontSize": "26px"
+      },
+      {
+        "type": "text",
+        "id": "s3_raman",
+        "content": "<strong>3. Рамановский усилитель (Raman Amplifier):</strong><br>Использует эффект вынужденного комбинационного рассеяния (ВКР, Stimulated Raman Scattering - SRS) в самом оптическом волокне линии передачи (распределенное усиление) или в специальном отрезке волокна (дискретное усиление).<br>Преимущества: возможность усиления в любом спектральном диапазоне (определяется длиной волны накачки), возможность реализации распределенного усиления, что улучшает отношение сигнал/шум.<br>Недостатки: требуется высокая мощность накачки, более сложная реализация.",
+        "positioning": {
+          "top": "65%",
+          "left": "5%",
+          "width": "90%"
+        },
+        "fontSize": "26px"
+      }
+    ]
+  },
+  {
+    "id": "slide004_edfa_details",
+    "elements": [
+      {
+        "type": "text",
+        "id": "s4_title",
+        "content": "EDFA: Устройство и принцип работы",
+        "positioning": {
+          "top": "2%",
+          "left": "2%",
+          "width": "96%"
+        },
+        "fontSize": "44px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "s4_intro_text",
+        "content": "EDFA являются стандартом для большинства систем дальней оптической связи благодаря сочетанию высокого коэффициента усиления, низкого уровня шума и работе в ключевых телекоммуникационных окнах прозрачности.",
+        "positioning": {
+          "top": "9%",
+          "left": "2%",
+          "width": "55%"
+        },
+        "fontSize": "26px"
+      },
+      {
+        "type": "text",
+        "id": "s4_components_header",
+        "content": "Основные компоненты EDFA:",
+        "positioning": {
+          "top": "17%",
+          "left": "2%",
+          "width": "55%"
+        },
+        "fontSize": "28px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "s4_comp_edf",
+        "content": "<strong>1. Активное волокно (EDF):</strong> Отрезок оптоволокна (несколько метров или десятков метров), сердцевина которого легирована ионами эрбия (Er<sup>3+</sup>). Ионы эрбия обеспечивают усиление в диапазоне 1.55 мкм.",
+        "positioning": {
+          "top": "23%",
+          "left": "2%",
+          "width": "55%"
+        },
+        "fontSize": "24px"
+      },
+      {
+        "type": "text",
+        "id": "s4_comp_pump",
+        "content": "<strong>2. Лазер накачки (Pump Laser):</strong> Полупроводниковый лазер, излучение которого (обычно 980 нм или 1480 нм) поглощается ионами эрбия, создавая инверсию населенности.",
+        "positioning": {
+          "top": "33%",
+          "left": "2%",
+          "width": "55%"
+        },
+        "fontSize": "24px"
+      },
+      {
+        "type": "text",
+        "id": "s4_comp_wdm",
+        "content": "<strong>3. WDM-ответвитель (WDM Coupler):</strong> Компонент, объединяющий (мультиплексирующий) входной информационный сигнал и мощное излучение лазера накачки в активное волокно.",
+        "positioning": {
+          "top": "43%",
+          "left": "2%",
+          "width": "55%"
+        },
+        "fontSize": "24px"
+      },
+      {
+        "type": "text",
+        "id": "s4_comp_isolators",
+        "content": "<strong>4. Оптические изоляторы:</strong> Размещаются на входе и выходе усилителя для предотвращения попадания отраженного сигнала и паразитной генерации, стабилизируя работу усилителя.",
+        "positioning": {
+          "top": "53%",
+          "left": "2%",
+          "width": "55%"
+        },
+        "fontSize": "24px"
+      },
+      {
+        "type": "text",
+        "id": "s4_comp_gff",
+        "content": "<strong>5. Фильтр выравнивания усиления (GFF, опционально):</strong> Так как усиление EDFA неравномерно по спектру, GFF используется для получения более плоской амплитудно-частотной характеристики (АЧХ).",
+        "positioning": {
+          "top": "63%",
+          "left": "2%",
+          "width": "55%"
+        },
+        "fontSize": "24px"
+      },
+      {
+        "type": "image",
+        "id": "s4_img_edfa_schematic",
+        "url": "https://via.placeholder.com/700x450.png?text=Типовая+схема+EDFA",
+        "altText": "Схема типичного EDFA с основными компонентами",
+        "caption": "Упрощенная схема EDFA.",
+        "positioning": {
+          "top": "10%",
+          "left": "60%",
+          "width": "38%",
+          "height": "auto"
+        }
+      },
+      {
+        "type": "text",
+        "id": "s4_graph_title",
+        "content": "Интерактивная модель АЧХ EDFA:",
+        "positioning": {
+          "top": "45%",
+          "left": "60%",
+          "width": "38%"
+        },
+        "fontSize": "26px"
+      },
+      {
+        "type": "slider",
+        "id": "avg_pump_s4_slider",
+        "label": "Уровень накачки (0.1-1.0):",
+        "inputType": "slider",
+        "defaultValue": 0.7,
+        "min": 0.1,
+        "max": 1.0,
+        "step": 0.05,
+        "positioning": {
+          "top": "50%",
+          "left": "60%",
+          "width": "38%"
+        }
+      },
+      {
+        "type": "slider",
+        "id": "tilt_control_s4_slider",
+        "label": "Контроль наклона АЧХ (-1 до +1):",
+        "inputType": "slider",
+        "defaultValue": 0,
+        "min": -1,
+        "max": 1,
+        "step": 0.1,
+        "positioning": {
+          "top": "57%",
+          "left": "60%",
+          "width": "38%"
+        }
+      },
+      {
+        "type": "linearGraph",
+        "id": "gain_char_s4",
+        "caption": "Зависимость коэффициента усиления G от длины волны λ",
+        "xAxisLabel": "Длина волны λ (нм)",
+        "yAxisLabel": "Усиление G (дБ)",
+        "domain": {
+          "min": 1525,
+          "max": 1575
+        },
+        "range": {
+          "min": 5,
+          "max": 35
+        },
+        "formulaParameters": {
+          "formula": "15 + 20 * (pump_param - 0.5) + 0.5 * tilt_param * (x - 1550) - 0.008 * pow(x-1550, 2)",
+          "variables": [
+            {
+              "name": "pump_param",
+              "inputId": "avg_pump_s4_slider"
+            },
+            {
+              "name": "tilt_param",
+              "inputId": "tilt_control_s4_slider"
+            }
+          ]
+        },
+        "positioning": {
+          "top": "64%",
+          "left": "60%",
+          "width": "38%",
+          "height": "34%"
+        }
+      }
+    ]
+  },
+  {
+    "id": "slide005_edfa_chars",
+    "elements": [
+      {
+        "type": "text",
+        "id": "s5_title",
+        "content": "Характеристики EDFA",
+        "positioning": {
+          "top": "2%",
+          "left": "2%",
+          "width": "96%"
+        },
+        "fontSize": "44px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "s5_char_gain",
+        "content": "<strong>1. Коэффициент усиления (Gain, G):</strong> Отношение выходной мощности к входной, обычно выражается в дБ. Типичные значения: 15-40 дБ. Зависит от длины волны, уровня накачки и входной мощности (эффект насыщения).",
+        "positioning": {
+          "top": "10%",
+          "left": "2%",
+          "width": "55%"
+        },
+        "fontSize": "24px"
+      },
+      {
+        "type": "text",
+        "id": "s5_char_bw",
+        "content": "<strong>2. Полоса усиления (Gain Bandwidth):</strong> Спектральный диапазон, в котором усилитель обеспечивает усиление. Для EDFA это обычно C-диапазон (1530-1565 нм) и L-диапазон (1565-1625 нм).",
+        "positioning": {
+          "top": "20%",
+          "left": "2%",
+          "width": "55%"
+        },
+        "fontSize": "24px"
+      },
+      {
+        "type": "text",
+        "id": "s5_char_power",
+        "content": "<strong>3. Выходная мощность насыщения (Saturated Output Power, P<sub>sat</sub>):</strong> Максимальная выходная мощность, которую может обеспечить усилитель. При высоких входных мощностях усиление уменьшается (насыщение). Значения от +10 до +27 дБм и выше.",
+        "positioning": {
+          "top": "30%",
+          "left": "2%",
+          "width": "55%"
+        },
+        "fontSize": "24px"
+      },
+      {
+        "type": "text",
+        "id": "s5_char_nf",
+        "content": "<strong>4. Шум-фактор (Noise Figure, NF):</strong> Мера деградации отношения сигнал/шум (OSNR) при прохождении сигнала через усилитель. В основном определяется спонтанным излучением (ASE). Типичные значения для EDFA: 3-6 дБ (чем ниже, тем лучше).",
+        "positioning": {
+          "top": "40%",
+          "left": "2%",
+          "width": "55%"
+        },
+        "fontSize": "24px"
+      },
+      {
+        "type": "image",
+        "id": "s5_img_gain_spectrum",
+        "url": "https://via.placeholder.com/600x350.png?text=Типичный+спектр+усиления+EDFA+(C-band)",
+        "altText": "Спектр усиления EDFA",
+        "caption": "Пример спектра усиления и шума ASE для C-диапазона EDFA.",
+        "positioning": {
+          "top": "10%",
+          "left": "60%",
+          "width": "38%",
+          "height": "auto"
+        }
+      },
+      {
+        "type": "text",
+        "id": "s5_interactive_title",
+        "content": "Интерактивная модель насыщения усиления EDFA:",
+        "positioning": {
+          "top": "50%",
+          "left": "2%",
+          "width": "96%"
+        },
+        "fontSize": "26px"
+      },
+      {
+        "type": "slider",
+        "id": "s5_input_power_slider",
+        "label": "Входная мощность P_in (дБм):",
+        "inputType": "slider",
+        "defaultValue": -20,
+        "min": -40,
+        "max": 0,
+        "step": 1,
+        "positioning": {
+          "top": "56%",
+          "left": "2%",
+          "width": "45%"
+        }
+      },
+      {
+        "type": "numberInput",
+        "id": "s5_small_signal_gain_input",
+        "label": "Малосигнальное усиление G0 (дБ):",
+        "inputType": "number",
+        "defaultValue": 25,
+        "min": 10,
+        "max": 40,
+        "step": 1,
+        "positioning": {
+          "top": "56%",
+          "left": "50%",
+          "width": "20%"
+        }
+      },
+      {
+        "type": "numberInput",
+        "id": "s5_p_sat_out_input",
+        "label": "Pout_sat (дБм):",
+        "inputType": "number",
+        "defaultValue": 10,
+        "min": 0,
+        "max": 20,
+        "step": 1,
+        "positioning": {
+          "top": "56%",
+          "left": "73%",
+          "width": "20%"
+        }
+      },
+      {
+        "type": "linearGraph",
+        "id": "s5_gain_saturation_graph",
+        "caption": "Зависимость коэффициента усиления G от входной мощности P_in",
+        "xAxisLabel": "Входная мощность P_in (дБм)",
+        "yAxisLabel": "Усиление G (дБ)",
+        "domain": {
+          "min": -40,
+          "max": 0
+        },
+        "range": {
+          "min": 0,
+          "max": 40
+        },
+        "formulaParameters": {
+          "formula": "G0 - 10 * log10(1 + (pow(10, Pin/10) * (pow(10, G0/10) - 1)) / pow(10, Psat_out/10))",
+          "variables": [
+            {
+              "name": "Pin",
+              "inputId": "s5_input_power_slider"
+            },
+            {
+              "name": "G0",
+              "inputId": "s5_small_signal_gain_input"
+            },
+            {
+              "name": "Psat_out",
+              "inputId": "s5_p_sat_out_input"
+            }
+          ]
+        },
+        "positioning": {
+          "top": "64%",
+          "left": "2%",
+          "width": "45%",
+          "height": "33%"
+        }
+      },
+      {
+        "type": "linearGraph",
+        "id": "s5_output_power_graph",
+        "caption": "Зависимость выходной мощности P_out от входной мощности P_in",
+        "xAxisLabel": "Входная мощность P_in (дБм)",
+        "yAxisLabel": "Выходная мощность P_out (дБм)",
+        "domain": {
+          "min": -40,
+          "max": 0
+        },
+        "range": {
+          "min": -30,
+          "max": 20
+        },
+        "formulaParameters": {
+          "formula": "Pin + (G0 - 10 * log10(1 + (pow(10, Pin/10) * (pow(10, G0/10) - 1)) / pow(10, Psat_out/10)))",
+          "variables": [
+            {
+              "name": "Pin",
+              "inputId": "s5_input_power_slider"
+            },
+            {
+              "name": "G0",
+              "inputId": "s5_small_signal_gain_input"
+            },
+            {
+              "name": "Psat_out",
+              "inputId": "s5_p_sat_out_input"
+            }
+          ]
+        },
+        "positioning": {
+          "top": "64%",
+          "left": "50%",
+          "width": "45%",
+          "height": "33%"
+        }
+      }
+    ]
+  },
+  {
+    "id": "slide006_soa_device",
+    "elements": [
+      {
+        "type": "text",
+        "id": "s6_title",
+        "content": "SOA: Устройство и принцип работы",
+        "positioning": {
+          "top": "2%",
+          "left": "2%",
+          "width": "96%"
+        },
+        "fontSize": "44px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "s6_intro_text",
+        "content": "Полупроводниковые оптические усилители (SOA) представляют собой p-n или p-i-n структуру, аналогичную лазерному диоду, но оптимизированную для усиления света без генерации. Ключевым отличием является подавление обратной связи для предотвращения лазерного эффекта.",
+        "positioning": {
+          "top": "10%",
+          "left": "2%",
+          "width": "55%"
+        },
+        "fontSize": "26px"
+      },
+      {
+        "type": "text",
+        "id": "s6_structure_header",
+        "content": "Структура SOA:",
+        "positioning": {
+          "top": "20%",
+          "left": "2%",
+          "width": "55%"
+        },
+        "fontSize": "28px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "s6_active_region",
+        "content": "<strong>1. Активная область (Active Region):</strong> Обычно из прямозонных полупроводников III-V групп (InP, InGaAsP, GaAs). Здесь происходит рекомбинация инжектированных носителей заряда (электронов и дырок), приводящая к стимулированному излучению фотонов.",
+        "positioning": {
+          "top": "26%",
+          "left": "2%",
+          "width": "55%"
+        },
+        "fontSize": "24px"
+      },
+      {
+        "type": "text",
+        "id": "s6_waveguide",
+        "content": "<strong>2. Оптический волновод:</strong> Структура, удерживающая свет в активной области для эффективного взаимодействия с ней.",
+        "positioning": {
+          "top": "36%",
+          "left": "2%",
+          "width": "55%"
+        },
+        "fontSize": "24px"
+      },
+      {
+        "type": "text",
+        "id": "s6_ar_coatings",
+        "content": "<strong>3. Антиотражающие (AR) покрытия:</strong> Наносятся на торцы волновода для минимизации отражений и подавления генерации Фабри-Перо.",
+        "positioning": {
+          "top": "43%",
+          "left": "2%",
+          "width": "55%"
+        },
+        "fontSize": "24px"
+      },
+      {
+        "type": "text",
+        "id": "s6_tilted_facet",
+        "content": "<strong>4. Скошенные торцы (Tilted Facets) / Оконная структура:</strong> Дополнительные меры для подавления отражений.",
+        "positioning": {
+          "top": "50%",
+          "left": "2%",
+          "width": "55%"
+        },
+        "fontSize": "24px"
+      },
+      {
+        "type": "text",
+        "id": "s6_principle",
+        "content": "<strong>Принцип работы:</strong><br>При подаче прямого смещения (инжекционного тока) в активную область инжектируются электроны и дырки. Это создает инверсию населенности. Проходящий через активную область оптический сигнал стимулирует рекомбинацию носителей, что приводит к когерентному усилению этого сигнала.",
+        "positioning": {
+          "top": "57%",
+          "left": "2%",
+          "width": "55%"
+        },
+        "fontSize": "24px"
+      },
+      {
+        "type": "image",
+        "id": "s6_img_soa_structure",
+        "url": "https://via.placeholder.com/700x500.png?text=Структура+SOA",
+        "altText": "Схематическое изображение структуры полупроводникового оптического усилителя",
+        "caption": "Типичная структура SOA.",
+        "positioning": {
+          "top": "10%",
+          "left": "60%",
+          "width": "38%",
+          "height": "auto"
+        }
+      },
+      {
+        "type": "image",
+        "id": "s6_img_soa_principle",
+        "url": "https://via.placeholder.com/700x400.png?text=Принцип+работы+SOA+(инжекция)",
+        "altText": "Принцип работы SOA",
+        "caption": "Инжекция носителей и усиление света в SOA.",
+        "positioning": {
+          "top": "50%",
+          "left": "60%",
+          "width": "38%",
+          "height": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "slide007_soa_chars",
+    "elements": [
+      {
+        "type": "text",
+        "id": "s7_title",
+        "content": "Характеристики SOA. Преимущества и недостатки.",
+        "positioning": {
+          "top": "2%",
+          "left": "2%",
+          "width": "96%"
+        },
+        "fontSize": "44px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "s7_chars_header",
+        "content": "Основные характеристики SOA:",
+        "positioning": {
+          "top": "10%",
+          "left": "2%",
+          "width": "45%"
+        },
+        "fontSize": "28px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "s7_char_gain",
+        "content": "<strong>Коэффициент усиления:</strong> 10-30 дБ, сильно зависит от тока инжекции.",
+        "positioning": {
+          "top": "16%",
+          "left": "2%",
+          "width": "45%"
+        },
+        "fontSize": "24px"
+      },
+      {
+        "type": "text",
+        "id": "s7_char_bw",
+        "content": "<strong>Полоса усиления:</strong> Широкая, 40-100 нм, что позволяет усиливать сигналы в различных диапазонах.",
+        "positioning": {
+          "top": "22%",
+          "left": "2%",
+          "width": "45%"
+        },
+        "fontSize": "24px"
+      },
+      {
+        "type": "text",
+        "id": "s7_char_power",
+        "content": "<strong>Выходная мощность насыщения:</strong> До +10...+17 дБм.",
+        "positioning": {
+          "top": "28%",
+          "left": "2%",
+          "width": "45%"
+        },
+        "fontSize": "24px"
+      },
+      {
+        "type": "text",
+        "id": "s7_char_nf",
+        "content": "<strong>Шум-фактор:</strong> 6-10 дБ (выше, чем у EDFA).",
+        "positioning": {
+          "top": "34%",
+          "left": "2%",
+          "width": "45%"
+        },
+        "fontSize": "24px"
+      },
+      {
+        "type": "text",
+        "id": "s7_char_speed",
+        "content": "<strong>Скорость переключения/модуляции:</strong> Очень высокая (<1 нс), что позволяет использовать SOA в качестве оптических затворов и модуляторов.",
+        "positioning": {
+          "top": "40%",
+          "left": "2%",
+          "width": "45%"
+        },
+        "fontSize": "24px"
+      },
+      {
+        "type": "text",
+        "id": "s7_advantages_header",
+        "content": "Преимущества SOA:",
+        "positioning": {
+          "top": "50%",
+          "left": "2%",
+          "width": "45%"
+        },
+        "fontSize": "28px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "s7_advantages_list",
+        "content": "<ul><li>Компактные размеры и малый вес</li><li>Возможность интеграции с другими оптоэлектронными компонентами</li><li>Широкий диапазон рабочих длин волн</li><li>Низкое энергопотребление</li><li>Высокая скорость модуляции и переключения</li><li>Потенциально низкая стоимость при массовом производстве</li></ul>",
+        "positioning": {
+          "top": "56%",
+          "left": "2%",
+          "width": "45%"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "text",
+        "id": "s7_disadvantages_header",
+        "content": "Недостатки SOA:",
+        "positioning": {
+          "top": "50%",
+          "left": "50%",
+          "width": "45%"
+        },
+        "fontSize": "28px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "s7_disadvantages_list",
+        "content": "<ul><li>Более высокий шум-фактор по сравнению с EDFA</li><li>Выраженные нелинейные эффекты (кросс-модуляция, четырехволновое смешение)</li><li>Чувствительность к поляризации входного излучения (хотя существуют поляризационно-независимые конструкции)</li><li>Меньшая выходная мощность насыщения по сравнению с EDFA</li></ul>",
+        "positioning": {
+          "top": "56%",
+          "left": "50%",
+          "width": "45%"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "text",
+        "id": "s7_interactive_title",
+        "content": "Зависимость усиления SOA от тока инжекции:",
+        "positioning": {
+          "top": "78%",
+          "left": "2%",
+          "width": "96%"
+        },
+        "fontSize": "26px"
+      },
+      {
+        "type": "slider",
+        "id": "s7_injection_current_slider",
+        "label": "Ток инжекции I (мА):",
+        "inputType": "slider",
+        "defaultValue": 150,
+        "min": 50,
+        "max": 300,
+        "step": 10,
+        "positioning": {
+          "top": "83%",
+          "left": "2%",
+          "width": "40%"
+        }
+      },
+      {
+        "type": "linearGraph",
+        "id": "s7_gain_vs_current_graph",
+        "caption": "Зависимость усиления G от тока инжекции I",
+        "xAxisLabel": "Ток инжекции I (мА)",
+        "yAxisLabel": "Усиление G (дБ)",
+        "domain": {
+          "min": 50,
+          "max": 300
+        },
+        "range": {
+          "min": 0,
+          "max": 30
+        },
+        "formulaParameters": {
+          "formula": "8 * log(I_inj / 10)",
+          "variables": [
+            {
+              "name": "I_inj",
+              "inputId": "s7_injection_current_slider"
+            }
+          ]
+        },
+        "positioning": {
+          "top": "83%",
+          "left": "45%",
+          "width": "53%",
+          "height": "16%"
+        }
+      }
+    ]
+  },
+  {
+    "id": "slide008_raman_amplifiers",
+    "elements": [
+      {
+        "type": "text",
+        "id": "s8_title",
+        "content": "Raman-усилители: Устройство и принцип работы",
+        "positioning": {
+          "top": "2%",
+          "left": "2%",
+          "width": "96%"
+        },
+        "fontSize": "44px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "s8_intro_text",
+        "content": "Рамановские усилители используют эффект вынужденного комбинационного рассеяния (ВКР, Stimulated Raman Scattering - SRS) для усиления оптического сигнала непосредственно в среде передачи (обычно в самом оптическом волокне).",
+        "positioning": {
+          "top": "10%",
+          "left": "2%",
+          "width": "55%"
+        },
+        "fontSize": "26px"
+      },
+      {
+        "type": "text",
+        "id": "s8_srs_principle_header",
+        "content": "Принцип ВКР:",
+        "positioning": {
+          "top": "18%",
+          "left": "2%",
+          "width": "55%"
+        },
+        "fontSize": "28px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "s8_srs_text",
+        "content": "Фотон мощного излучения накачки (pump photon) взаимодействует с молекулами среды (например, SiO<sub>2</sub> в волокне), возбуждая их колебательные моды (фононы) и теряя при этом часть энергии. Эта энергия передается сигнальному фотону, частота которого ниже частоты накачки (Стоксово смещение). Если присутствует сигнальный фотон с подходящей частотой, он стимулирует этот процесс, приводя к своему усилению.",
+        "positioning": {
+          "top": "24%",
+          "left": "2%",
+          "width": "55%"
+        },
+        "fontSize": "24px"
+      },
+      {
+        "type": "text",
+        "id": "s8_pump_wavelength",
+        "content": "<strong>Длина волны накачки:</strong> Определяет спектральный диапазон усиления. Стоксов сдвиг для кварцевого волокна составляет около 13.2 ТГц. Это означает, что для усиления сигнала в C-диапазоне (около 1550 нм, ~193.5 ТГц) требуется накачка с длиной волны около 1450 нм (~206.7 ТГц).",
+        "positioning": {
+          "top": "38%",
+          "left": "2%",
+          "width": "55%"
+        },
+        "fontSize": "24px"
+      },
+      {
+        "type": "text",
+        "id": "s8_types_header",
+        "content": "Типы Рамановских усилителей:",
+        "positioning": {
+          "top": "50%",
+          "left": "2%",
+          "width": "55%"
+        },
+        "fontSize": "28px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "s8_distributed_raman",
+        "content": "<strong>1. Распределенные (Distributed Raman Amplifiers - DRA):</strong> Усиление происходит непосредственно в волокне линии передачи. Накачка вводится в линию (встречная или попутная). Улучшает OSNR за счет распределения усиления по длине линии.",
+        "positioning": {
+          "top": "56%",
+          "left": "2%",
+          "width": "55%"
+        },
+        "fontSize": "24px"
+      },
+      {
+        "type": "text",
+        "id": "s8_discrete_raman",
+        "content": "<strong>2. Дискретные (Lumped/Discrete Raman Amplifiers):</strong> Используют специальное высоконелинейное волокно с оптимизированными характеристиками для ВКР. Более компактны, но не дают преимуществ распределенного усиления.",
+        "positioning": {
+          "top": "68%",
+          "left": "2%",
+          "width": "55%"
+        },
+        "fontSize": "24px"
+      },
+      {
+        "type": "image",
+        "id": "s8_img_raman_principle",
+        "url": "https://via.placeholder.com/600x400.png?text=Принцип+Рамановского+усиления",
+        "altText": "Схема Рамановского усиления",
+        "caption": "Взаимодействие фотона накачки, сигнального фотона и фонона.",
+        "positioning": {
+          "top": "10%",
+          "left": "60%",
+          "width": "38%",
+          "height": "auto"
+        }
+      },
+      {
+        "type": "image",
+        "id": "s8_img_raman_setup",
+        "url": "https://via.placeholder.com/600x350.png?text=Схема+распределенного+Raman+усилителя",
+        "altText": "Схема распределенного Raman усилителя",
+        "caption": "Встречная и попутная накачка в DRA.",
+        "positioning": {
+          "top": "45%",
+          "left": "60%",
+          "width": "38%",
+          "height": "auto"
+        }
+      },
+      {
+        "type": "text",
+        "id": "s8_interactive_title",
+        "content": "Спектр усиления Рамана (концептуально):",
+        "positioning": {
+          "top": "78%",
+          "left": "2%",
+          "width": "96%"
+        },
+        "fontSize": "26px"
+      },
+      {
+        "type": "slider",
+        "id": "s8_pump_power_slider",
+        "label": "Мощность накачки P_pump (отн. ед.):",
+        "inputType": "slider",
+        "defaultValue": 0.7,
+        "min": 0.1,
+        "max": 1.0,
+        "step": 0.1,
+        "positioning": {
+          "top": "83%",
+          "left": "2%",
+          "width": "40%"
+        }
+      },
+      {
+        "type": "linearGraph",
+        "id": "s8_raman_gain_spectrum_graph",
+        "caption": "Зависимость усиления Рамана от частотного сдвига Δf",
+        "xAxisLabel": "Частотный сдвиг Δf (ТГц, относительно накачки)",
+        "yAxisLabel": "Усиление G_Raman (дБ)",
+        "domain": {
+          "min": 0,
+          "max": 20
+        },
+        "range": {
+          "min": 0,
+          "max": 20
+        },
+        "formulaParameters": {
+          "formula": "P_pump * 20 * exp(-pow((x - 13.2)/5, 2))",
+          "variables": [
+            {
+              "name": "P_pump",
+              "inputId": "s8_pump_power_slider"
+            }
+          ]
+        },
+        "positioning": {
+          "top": "83%",
+          "left": "45%",
+          "width": "53%",
+          "height": "16%"
+        }
+      }
+    ]
+  },
+  {
+    "id": "slide009_applications",
+    "elements": [
+      {
+        "type": "text",
+        "id": "s9_title",
+        "content": "Применение оптических усилителей",
+        "positioning": {
+          "top": "2%",
+          "left": "2%",
+          "width": "96%"
+        },
+        "fontSize": "44px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "s9_intro",
+        "content": "Оптические усилители играют важнейшую роль в современных телекоммуникационных системах, позволяя преодолевать ограничения, связанные с затуханием сигнала в оптоволокне.",
+        "positioning": {
+          "top": "10%",
+          "left": "2%",
+          "width": "96%"
+        },
+        "fontSize": "26px"
+      },
+      {
+        "type": "text",
+        "id": "s9_booster_amps",
+        "content": "<strong>1. Бустерные усилители (Booster Amplifiers):</strong><br>Устанавливаются непосредственно после передатчика для увеличения мощности оптического сигнала перед его вводом в линию передачи. Это позволяет увеличить длину регенерационного участка. EDFA и SOA часто используются в этой роли.",
+        "positioning": {
+          "top": "18%",
+          "left": "2%",
+          "width": "47%"
+        },
+        "fontSize": "24px"
+      },
+      {
+        "type": "text",
+        "id": "s9_inline_amps",
+        "content": "<strong>2. Линейные усилители (In-line Amplifiers):</strong><br>Размещаются вдоль линии передачи через определенные интервалы (например, каждые 80-120 км) для компенсации потерь сигнала на этом участке. Наиболее часто применяются EDFA и Рамановские усилители (особенно распределенные).",
+        "positioning": {
+          "top": "33%",
+          "left": "2%",
+          "width": "47%"
+        },
+        "fontSize": "24px"
+      },
+      {
+        "type": "text",
+        "id": "s9_pre_amps",
+        "content": "<strong>3. Предусилители (Preamplifiers):</strong><br>Устанавливаются непосредственно перед оптическим приемником для усиления ослабленного после прохождения линии сигнала до уровня, достаточного для его уверенного детектирования. Это повышает чувствительность приемника. EDFA и SOA (с низким шумом) подходят для этой задачи.",
+        "positioning": {
+          "top": "48%",
+          "left": "2%",
+          "width": "47%"
+        },
+        "fontSize": "24px"
+      },
+      {
+        "type": "text",
+        "id": "s9_other_apps_header",
+        "content": "Другие области применения:",
+        "positioning": {
+          "top": "63%",
+          "left": "2%",
+          "width": "47%"
+        },
+        "fontSize": "26px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "s9_other_apps_list",
+        "content": "<ul><li><strong>DWDM системы:</strong> Усиление всего многоканального WDM сигнала. EDFA с выравниванием усиления (GFF) и Рамановские усилители широко используются.</li><li><strong>Городские и региональные сети (MAN/WAN):</strong> Компенсация потерь в разветвленных сетях.</li><li><strong>Сети доступа (FTTx, PON):</strong> Увеличение дальности и числа абонентов.</li><li><strong>Оптические коммутаторы и маршрутизаторы:</strong> SOA могут использоваться как для усиления, так и для быстрой коммутации сигналов.</li><li><strong>Волоконно-оптические датчики и измерительные системы:</strong> Усиление слабых оптических сигналов от датчиков.</li><li><strong>Научные исследования:</strong> В различных экспериментальных установках.</li></ul>",
+        "positioning": {
+          "top": "69%",
+          "left": "2%",
+          "width": "47%"
+        },
+        "fontSize": "22px"
+      },
+      {
+        "type": "image",
+        "id": "s9_img_link_with_amps",
+        "url": "https://via.placeholder.com/800x500.png?text=Схема+ВОЛС+с+усилителями",
+        "altText": "Схема волоконно-оптической линии связи с бустерным, линейным и предусилителем",
+        "caption": "Типовое размещение оптических усилителей в ВОЛС.",
+        "positioning": {
+          "top": "18%",
+          "left": "52%",
+          "width": "46%",
+          "height": "auto"
+        }
+      },
+      {
+        "type": "image",
+        "id": "s9_img_dwdm",
+        "url": "https://via.placeholder.com/800x300.png?text=DWDM+система+с+EDFA",
+        "altText": "DWDM система с EDFA",
+        "caption": "Применение EDFA в системах спектрального уплотнения (DWDM).",
+        "positioning": {
+          "top": "60%",
+          "left": "52%",
+          "width": "46%",
+          "height": "auto"
+        }
+      }
+    ]
+  },
+  {
+    "id": "slide010_comparison",
+    "elements": [
+      {
+        "type": "text",
+        "id": "s10_title",
+        "content": "Сравнение оптических усилителей и области их применения",
+        "positioning": { "top": "2%", "left": "2%", "width": "96%" },
+        "fontSize": "44px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "s10_intro",
+        "content": "Выбор типа оптического усилителя зависит от конкретных требований системы, таких как рабочий диапазон длин волн, необходимый коэффициент усиления, уровень шума, стоимость и специфические функции.",
+        "positioning": { "top": "9%", "left": "2%", "width": "96%" },
+        "fontSize": "26px"
+      },
+      {
+        "type": "text",
+        "id": "s10_table_header_param",
+        "content": "<strong>Параметр / Характеристика</strong>",
+        "positioning": { "top": "16%", "left": "2%", "width": "23%" },
+        "fontSize": "22px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "s10_table_header_edfa",
+        "content": "<strong>EDFA</strong>",
+        "positioning": { "top": "16%", "left": "26%", "width": "23%" },
+        "fontSize": "22px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "s10_table_header_soa",
+        "content": "<strong>SOA</strong>",
+        "positioning": { "top": "16%", "left": "50%", "width": "23%" },
+        "fontSize": "22px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "s10_table_header_raman",
+        "content": "<strong>Raman</strong>",
+        "positioning": { "top": "16%", "left": "74%", "width": "23%" },
+        "fontSize": "22px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "s10_row1_param",
+        "content": "Активная среда",
+        "positioning": { "top": "22%", "left": "2%", "width": "23%", "height": "6%" },
+        "fontSize": "20px"
+      },
+      {
+        "type": "text",
+        "id": "s10_row1_edfa",
+        "content": "Эрбиевое волокно",
+        "positioning": { "top": "22%", "left": "26%", "width": "23%", "height": "6%" },
+        "fontSize": "20px"
+      },
+      {
+        "type": "text",
+        "id": "s10_row1_soa",
+        "content": "Полупроводник (InP, InGaAsP)",
+        "positioning": { "top": "22%", "left": "50%", "width": "23%", "height": "6%" },
+        "fontSize": "20px"
+      },
+      {
+        "type": "text",
+        "id": "s10_row1_raman",
+        "content": "Стандартное или спец. волокно",
+        "positioning": { "top": "22%", "left": "74%", "width": "23%", "height": "6%" },
+        "fontSize": "20px"
+      },
+      {
+        "type": "text",
+        "id": "s10_row2_param",
+        "content": "Коэффициент усиления",
+        "positioning": { "top": "29%", "left": "2%", "width": "23%", "height": "6%" },
+        "fontSize": "20px"
+      },
+      {
+        "type": "text",
+        "id": "s10_row2_edfa",
+        "content": "Высокий (15-40 дБ)",
+        "positioning": { "top": "29%", "left": "26%", "width": "23%", "height": "6%" },
+        "fontSize": "20px"
+      },
+      {
+        "type": "text",
+        "id": "s10_row2_soa",
+        "content": "Средний (10-30 дБ)",
+        "positioning": { "top": "29%", "left": "50%", "width": "23%", "height": "6%" },
+        "fontSize": "20px"
+      },
+      {
+        "type": "text",
+        "id": "s10_row2_raman",
+        "content": "Средний/Высокий (зависит от накачки)",
+        "positioning": { "top": "29%", "left": "74%", "width": "23%", "height": "6%" },
+        "fontSize": "20px"
+      },
+      {
+        "type": "text",
+        "id": "s10_row3_param",
+        "content": "Полоса усиления",
+        "positioning": { "top": "36%", "left": "2%", "width": "23%", "height": "6%" },
+        "fontSize": "20px"
+      },
+      {
+        "type": "text",
+        "id": "s10_row3_edfa",
+        "content": "C, L-диапазоны (узкая)",
+        "positioning": { "top": "36%", "left": "26%", "width": "23%", "height": "6%" },
+        "fontSize": "20px"
+      },
+      {
+        "type": "text",
+        "id": "s10_row3_soa",
+        "content": "Широкая (O, E, S, C, L)",
+        "positioning": { "top": "36%", "left": "50%", "width": "23%", "height": "6%" },
+        "fontSize": "20px"
+      },
+      {
+        "type": "text",
+        "id": "s10_row3_raman",
+        "content": "Гибкая (зависит от λ накачки)",
+        "positioning": { "top": "36%", "left": "74%", "width": "23%", "height": "6%" },
+        "fontSize": "20px"
+      },
+      {
+        "type": "text",
+        "id": "s10_row4_param",
+        "content": "Шум-фактор (NF)",
+        "positioning": { "top": "43%", "left": "2%", "width": "23%", "height": "6%" },
+        "fontSize": "20px"
+      },
+      {
+        "type": "text",
+        "id": "s10_row4_edfa",
+        "content": "Низкий (3-6 дБ)",
+        "positioning": { "top": "43%", "left": "26%", "width": "23%", "height": "6%" },
+        "fontSize": "20px"
+      },
+      {
+        "type": "text",
+        "id": "s10_row4_soa",
+        "content": "Средний/Высокий (6-10 дБ)",
+        "positioning": { "top": "43%", "left": "50%", "width": "23%", "height": "6%" },
+        "fontSize": "20px"
+      },
+      {
+        "type": "text",
+        "id": "s10_row4_raman",
+        "content": "Низкий (особенно распределенный)",
+        "positioning": { "top": "43%", "left": "74%", "width": "23%", "height": "6%" },
+        "fontSize": "20px"
+      },
+      {
+        "type": "text",
+        "id": "s10_row5_param",
+        "content": "Выходная мощность",
+        "positioning": { "top": "50%", "left": "2%", "width": "23%", "height": "6%" },
+        "fontSize": "20px"
+      },
+      {
+        "type": "text",
+        "id": "s10_row5_edfa",
+        "content": "Высокая",
+        "positioning": { "top": "50%", "left": "26%", "width": "23%", "height": "6%" },
+        "fontSize": "20px"
+      },
+      {
+        "type": "text",
+        "id": "s10_row5_soa",
+        "content": "Средняя",
+        "positioning": { "top": "50%", "left": "50%", "width": "23%", "height": "6%" },
+        "fontSize": "20px"
+      },
+      {
+        "type": "text",
+        "id": "s10_row5_raman",
+        "content": "Зависит от мощности накачки",
+        "positioning": { "top": "50%", "left": "74%", "width": "23%", "height": "6%" },
+        "fontSize": "20px"
+      },
+      {
+        "type": "text",
+        "id": "s10_row6_param",
+        "content": "Нелинейность",
+        "positioning": { "top": "57%", "left": "2%", "width": "23%", "height": "6%" },
+        "fontSize": "20px"
+      },
+      {
+        "type": "text",
+        "id": "s10_row6_edfa",
+        "content": "Низкая",
+        "positioning": { "top": "57%", "left": "26%", "width": "23%", "height": "6%" },
+        "fontSize": "20px"
+      },
+      {
+        "type": "text",
+        "id": "s10_row6_soa",
+        "content": "Высокая",
+        "positioning": { "top": "57%", "left": "50%", "width": "23%", "height": "6%" },
+        "fontSize": "20px"
+      },
+      {
+        "type": "text",
+        "id": "s10_row6_raman",
+        "content": "Собственная (является основой)",
+        "positioning": { "top": "57%", "left": "74%", "width": "23%", "height": "6%" },
+        "fontSize": "20px"
+      },
+      {
+        "type": "text",
+        "id": "s10_row7_param",
+        "content": "Интеграция / Размер",
+        "positioning": { "top": "64%", "left": "2%", "width": "23%", "height": "6%" },
+        "fontSize": "20px"
+      },
+      {
+        "type": "text",
+        "id": "s10_row7_edfa",
+        "content": "Модульный, крупнее",
+        "positioning": { "top": "64%", "left": "26%", "width": "23%", "height": "6%" },
+        "fontSize": "20px"
+      },
+      {
+        "type": "text",
+        "id": "s10_row7_soa",
+        "content": "Компактный, высокая интеграция",
+        "positioning": { "top": "64%", "left": "50%", "width": "23%", "height": "6%" },
+        "fontSize": "20px"
+      },
+      {
+        "type": "text",
+        "id": "s10_row7_raman",
+        "content": "Требует мощной накачки, может быть распределенным",
+        "positioning": { "top": "64%", "left": "74%", "width": "23%", "height": "6%" },
+        "fontSize": "20px"
+      },
+      {
+        "type": "text",
+        "id": "s10_row8_param",
+        "content": "Основные применения",
+        "positioning": { "top": "71%", "left": "2%", "width": "23%", "height": "27%" },
+        "fontSize": "20px"
+      },
+      {
+        "type": "text",
+        "id": "s10_row8_edfa",
+        "content": "Магистральные DWDM сети (C, L диапазоны), CATV, предусилители, бустеры.",
+        "positioning": { "top": "71%", "left": "26%", "width": "23%", "height": "27%" },
+        "fontSize": "20px"
+      },
+      {
+        "type": "text",
+        "id": "s10_row8_soa",
+        "content": "Сети доступа (FTTx), городские сети, оптическая коммутация, преобразование длин волн, регенерация сигнала.",
+        "positioning": { "top": "71%", "left": "50%", "width": "23%", "height": "27%" },
+        "fontSize": "20px"
+      },
+      {
+        "type": "text",
+        "id": "s10_row8_raman",
+        "content": "Сверхдальние магистрали (распределенное усиление), расширение полосы (S, E, U диапазоны), компенсация больших потерь.",
+        "positioning": { "top": "71%", "left": "74%", "width": "23%", "height": "27%" },
+        "fontSize": "20px"
+      }
+    ]
+  },
+  {
+    "id": "slide011_summary",
+    "elements": [
+      {
+        "type": "text",
+        "id": "s11_title",
+        "content": "Итоги урока: Оптические усилители",
+        "positioning": { "top": "5%", "left": "5%", "width": "90%" },
+        "fontSize": "48px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "s11_recap_intro",
+        "content": "В этом уроке мы рассмотрели ключевые аспекты оптических усилителей, их роль в современных волоконно-оптических системах связи и основные типы.",
+        "positioning": { "top": "15%", "left": "5%", "width": "90%" },
+        "fontSize": "28px"
+      },
+      {
+        "type": "text",
+        "id": "s11_point1",
+        "content": "<strong>1. Необходимость усиления:</strong> Оптические сигналы затухают при передаче по волокну, что ограничивает дальность. Усилители компенсируют эти потери, позволяя передавать информацию на большие расстояния без полной регенерации.",
+        "positioning": { "top": "25%", "left": "5%", "width": "90%" },
+        "fontSize": "26px"
+      },
+      {
+        "type": "text",
+        "id": "s11_point2",
+        "content": "<strong>2. Принцип работы:</strong> Основан на стимулированном излучении в активной среде при условии инверсии населенности, создаваемой внешней накачкой.",
+        "positioning": { "top": "35%", "left": "5%", "width": "90%" },
+        "fontSize": "26px"
+      },
+      {
+        "type": "text",
+        "id": "s11_point3",
+        "content": "<strong>3. Типы усилителей и их особенности:</strong>",
+        "positioning": { "top": "45%", "left": "5%", "width": "90%" },
+        "fontSize": "26px",
+        "fontWidth": "bold"
+      },
+      {
+        "type": "text",
+        "id": "s11_point3_edfa",
+        "content": "<em>EDFA:</em> Высокое усиление, низкий шум, стандарт для C и L диапазонов в магистральных сетях.",
+        "positioning": { "top": "52%", "left": "8%", "width": "87%" },
+        "fontSize": "24px"
+      },
+      {
+        "type": "text",
+        "id": "s11_point3_soa",
+        "content": "<em>SOA:</em> Компактность, широкая полоса, быстрая модуляция, подходит для сетей доступа и интегральных схем.",
+        "positioning": { "top": "59%", "left": "8%", "width": "87%" },
+        "fontSize": "24px"
+      },
+      {
+        "type": "text",
+        "id": "s11_point3_raman",
+        "content": "<em>Raman:</em> Гибкость в выборе диапазона, распределенное усиление, улучшение OSNR в сверхдальних системах.",
+        "positioning": { "top": "66%", "left": "8%", "width": "87%" },
+        "fontSize": "24px"
+      },
+      {
+        "type": "text",
+        "id": "s11_point4",
+        "content": "<strong>4. Ключевые характеристики:</strong> Коэффициент усиления, полоса усиления, выходная мощность насыщения, шум-фактор — важные параметры для выбора и проектирования систем.",
+        "positioning": { "top": "73%", "left": "5%", "width": "90%" },
+        "fontSize": "26px"
+      },
+      {
+        "type": "text",
+        "id": "s11_point5",
+        "content": "<strong>5. Применения:</strong> От магистральных линий и подводных кабелей до городских сетей и FTTx, оптические усилители являются неотъемлемой частью инфраструктуры связи.",
+        "positioning": { "top": "83%", "left": "5%", "width": "90%" },
+        "fontSize": "26px"
+      },
+      {
+        "type": "text",
+        "id": "s11_conclusion",
+        "content": "Понимание принципов работы и характеристик различных оптических усилителей необходимо для проектирования и эксплуатации эффективных ВОСП.",
+        "positioning": { "top": "90%", "left": "5%", "width": "90%", "bottom": "5%" },
+        "fontSize": "28px",
+        "fontWidth": "bold"
+      }
+    ]
+  }
+]
